@@ -45,6 +45,7 @@ I figured as such. Below, there is a flowchart that goes through what processes 
 **NB: To save me time, credit/debit card == bank account (If you’ve got a bank account then it should accept it).
 Additionally, if you live in the US then Google also accepts PayPal.
 Consult: https://cloud.google.com/billing/docs/how-to/payment-methods for more information.**
+
 ![image](https://user-images.githubusercontent.com/49169805/87231445-34c15500-c3af-11ea-864a-3f86b7319781.png)
 
  
@@ -142,7 +143,7 @@ a.	I would also recommend that you save the public key as well, anything could h
 
 5)	Scroll down to the bottom and click save. ![image](https://mesub.is-ne.at/13KGYX.png)
 
-##Step six: Uploading the files to Google Cloud Platform
+## Step six: Uploading the files to Google Cloud Platform
 Now we need to upload the bot’s files!
 
 1)	Download and install the FileZilla **Client** here: https://filezilla-project.org/download.php?type=client
@@ -173,7 +174,7 @@ Now we need to upload the bot’s files!
 12)	Click ok to save it. (Password Prompt is optional)
 ![image](https://mesub.is-ne.at/MgGYPx.png)
 
-##Step seven: Accessing the server
+## Step seven: Accessing the server
 Now we’ve set it all up, we should be able to access the server!
 
 1)	 Navigate to File > site manager ![image](https://mesub.is-ne.at/NYgGfw.png)
@@ -188,7 +189,7 @@ Now we’ve set it all up, we should be able to access the server!
 If it all works, then it should look like this:
 ![image](https://mesub.is-ne.at/qps91q.png)
 
-##Step eight: Transferring the bot’s files
+## Step eight: Transferring the bot’s files
 
 1)	Locate your bot’s files in the internal navigator.
 ![image](https://mesub.is-ne.at/Ye5tRh.png)
