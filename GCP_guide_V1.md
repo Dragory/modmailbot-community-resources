@@ -1,5 +1,5 @@
 
-# How to host your modmail bot on Google Cloud Platform for free
+# How to host your modmail bot on Google Cloud Platform for free | Made by @mesub7
 
 Want to host your modmail bot for free? Don’t want to be ridiculed for using Heroku? This guide will take you through how to get the bot running on Google Cloud.
 **DISCLAIMER: I am not responsible for any charges that you face due to you digressing from the guide.**
@@ -229,3 +229,7 @@ If it all works then it should say >Done! Now listening to DMs.
 Congratulations! You’ve now got a modmail bot that is being run for free and you’ve gained a little Linux knowledge 😊.
 
 **Logs setup coming soon**
+
+# Support
+
+If you are having issues with setting this up, then I am in [Dragory's discord server](https://discord.gg/vRuhG9R) (mesub#0556). I may not be online when you post your question though.
