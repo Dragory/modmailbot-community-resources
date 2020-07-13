@@ -221,7 +221,7 @@ Now that we’ve set everything up, we should be able to start the bot!
 2)	Run `npm ci`
 
 3)	Run `npm start`
-If it all works then it should say >Done! Now listening to DMs.
+If it all works then it should say > Done! Now listening to DMs.
 
 4)	Escape it by pressing control + c
 
