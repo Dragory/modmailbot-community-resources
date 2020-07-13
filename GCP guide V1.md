@@ -84,7 +84,7 @@ Select one of the following zones: **us-central1 (lowa), us-east1 (south carolin
 We need the node version manager and node.js for the bot and we need pm2 to keep it on all the time, so we’ll take the opportunity to get them now. 
 1)	Navigate to https://github.com/nvm-sh/nvm#installing-and-updating
 
-2)	Copy the `curl -o-…` command (from the page). This will run the install script (doing all the dirty work for us) :P
+2)	Copy the first `curl -o-…` command (from the page). This will run the install script (doing all the dirty work for us) :P
 
 3)	Close and reopen your terminal (the window)
 
@@ -102,7 +102,7 @@ Now (at the time of writing) since the bot supports versions 10 to 12, we’ll b
 
 Now pm2.
 
-8)	Run ` npm i -g pm2`
+8)	Run ` npm install -g pm2`
 
 9)	Close the terminal
  
