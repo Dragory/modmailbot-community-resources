@@ -1,11 +1,13 @@
 
-# How to host your modmail bot on Google Cloud Platform for free | Made by @mesub7
+# How to host your modmail bot on Google Cloud Platform for free | Made by [@mesub7](https://github.com/mesub7)
 
 Want to host your modmail bot for free? Don’t want to be ridiculed for using Heroku, Glitch or repl.it? This guide will take you through how to get the bot running on Google Cloud.
 **DISCLAIMER: I am not responsible for any charges that you face due to you digressing from the guide.**
 
 Due to the multiple services/applications that we are using, this guide may be outdated. If this is the case then please let me know here or in the discord server.
 I am aware that there are a few alternative methods to this. If you know what you are doing, then by all means use part of this guide and your own method. Just note that if you do this, I can’t really provide support as your method may be the reason it is not working.
+
+Don't want to download programs? Know your way around the terminal? Check out [this section](https://github.com/mesub7/modmailbot-community-resources/blob/master/GCP%20guide%20V1.1.md#terminal).
 
 This guide presumes that you have basic terminal/command prompt knowledge and you are running Windows 10. If you don’t know your `dir` from your `cd` then it might be worth getting somebody else (not me) set up this for you! Google has practically all the answers. I cannot be sure if the steps are different in other operating systems, use your own judgement for equivalents. 
 
@@ -115,13 +117,16 @@ We would have gone with FTP (File Transfer Protocol) but I was advised to use SF
 1)	Download and install PuTTY [here.](https://www.chiark.greenend.org.uk/~sgtatham/putty/)
 
 2)	Locate and open PuTTYgen.
+
 ![image](https://user-images.githubusercontent.com/49169805/87231702-486dbb00-c3b1-11ea-839c-c7728c44b061.png)
 
 3)	Once the window has opened, click on generate (no need to change any settings) and move your mouse around to generate
 _some randomness_.
+
 ![image](https://user-images.githubusercontent.com/49169805/87231709-591e3100-c3b1-11ea-804c-a151ff298100.png)
 
 4)	Change the key comment to **the text before the @ in the terminal!!!** this is your username for later.
+
 ![image](https://user-images.githubusercontent.com/49169805/87231737-9f739000-c3b1-11ea-8ab9-e02e32c943b4.png)
 
 5)	Save the private key. Keep it safe as you’ll need it later!
@@ -134,14 +139,18 @@ a.	I would also recommend that you save the public key as well, anything could h
 1)	Click on the name of your compute engine.
 
 2)	Click edit at the top.
+
 ![image](https://mesub.is-ne.at/899nJz.png)
 
 3)	Scroll down to the SSH section and click “Show and edit”.
+
 ![image](https://mesub.is-ne.at/8rp9VM.png)
 
 4)	Paste the **public** key that you copied from PuTTY earlier.
 
-5)	Scroll down to the bottom and click save. ![image](https://mesub.is-ne.at/13KGYX.png)
+5)	Scroll down to the bottom and click save.
+
+![image](https://mesub.is-ne.at/13KGYX.png)
 
 ## Step six: Uploading the files to Google Cloud Platform
 Now we need to upload the bot’s files!
@@ -184,14 +193,15 @@ Now we’ve set it all up, we should be able to access the server!
 3)	If given a password prompt, just leave it blank and press enter.
 
 4)	If given an unknown key prompt comes up, then click ok (Always trusting the host is up to you).
-![image](https://mesub.is-ne.at/6g7r9x.png)
+![image](https://mesub.is-ne.at/aCPwlv.png)
 
 If it all works, then it should look like this:
-![image](https://mesub.is-ne.at/qps91q.png)
+![image](hhttps://mesub.is-ne.at/cuihcu.png)
 
 ## Step eight: Transferring the bot’s files
 
 1)	Locate your bot’s files in the internal navigator.
+
 ![image](https://mesub.is-ne.at/Ye5tRh.png)
 
 2)	Drag the files over.
@@ -203,7 +213,9 @@ Now it is time to get the bot in your servers!
 
 1)	Go back to the discord developer page that you should have left open.
 
-2)	Go to the hamburger menu and click on oauth2. ![image](https://mesub.is-ne.at/g4n1YW.png)
+2)	Go to the hamburger menu and click on oauth2.
+
+![image](https://mesub.is-ne.at/g4n1YW.png)
 
 3)	Scroll down and select bot.
 
@@ -228,6 +240,31 @@ If it all works then it should say "Done! Now listening to DMs" once it has load
 
 5)	Run `pm2 start modmailbot-pm2.json` - This will ensure that the bot stays online when we close the terminal.
 Congratulations! You’ve now got a modmail bot that is being run for free and you’ve gained a little Linux knowledge 😊.
+
+# Terminal
+
+Skip this section if you have followed the guide all the way up to here. Here's a [jumplink.](https://github.com/mesub7/modmailbot-community-resources/blob/master/GCP%20guide%20V1.1.md#logs)
+
+This allows you to download and configure the bot from the terminal, no fuss involved. I will not be providing support on this section. 
+(Many thanks to [@dopeghoti](https://github.com/dopeghoti) for providing this method.)
+
+Prequisite: Please follow steps [1](https://github.com/mesub7/modmailbot-community-resources/blob/master/GCP%20guide%20V1.1.md#step-one-discord-developer-portal) and [3](https://github.com/mesub7/modmailbot-community-resources/blob/master/GCP%20guide%20V1.1.md#step-three-google-cloud-platform-nodejs-and-pm2) before continuing this section.
+
+1) Make a directory called `src` and navigate to it.
+
+2) Install wget (`sudo apt install wget`)
+
+3) Run `wget https://github.com/Dragory/modmailbot/archive/v2.30.1.tar.gz`
+
+4) Run `tar zxf v2.30.1.tar.gz`
+
+5) Naviage to the directory it creates.
+
+6) Run `cp config.{example.,}ini`
+
+7) Run `nano config.ini` and edit the config to your liking.
+
+Continue following the guide from step [9.](https://github.com/mesub7/modmailbot-community-resources/blob/master/GCP%20guide%20V1.1.md#step-nine-inviting-the-bot-to-the-server)
 
 # Logs
 
@@ -285,7 +322,7 @@ Yes. This is also out of scope for the guide.
 
 **How long is this free for?**
 
-Until Google decides to change something about it
+Until Google decides to change its always free teir to something that isn't usable (unlikely).
 
 
 # Support and feedback
@@ -293,3 +330,5 @@ Until Google decides to change something about it
 If you are having issues with anything in this guide and you've tried to help yourself, then I am in [Dragory's discord server](https://discord.gg/vRuhG9R) (mesub#0556). I may not be online when you post your question though.
 
 Additonally, if you've got any suggestions on how to improve the guide then please feel free to create an issue or find me in [Dragory's discord server](https://discord.gg/vRuhG9R).
+
+_This guide was last updated on the 14/7/2020._
