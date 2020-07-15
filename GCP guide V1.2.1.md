@@ -7,7 +7,7 @@ Want to host your modmail bot for free? Don’t want to be ridiculed for using H
 Due to the multiple services/applications that we are using, this guide may be outdated. If this is the case then please let me know here or in the discord server.
 I am aware that there are a few alternative methods to this. If you know what you are doing, then by all means use part of this guide and your own method. Just note that if you do this, I can’t really provide support as your method may be the reason it is not working.
 
-If you know your way a little bit around Linux and want to just download and configure the bot remotely, you can use the Terminal instructions found [here](https://github.com/mesub7/modmailbot-community-resources/blob/master/GCP%20guide%20V1.1.md#terminal).  It's quicker but can be confusing if you're new to server administration.
+If you know your way a little bit around Linux and want to just download and configure the bot remotely, you can use the Terminal instructions found [here](https://github.com/mesub7/modmailbot-community-resources/blob/master/GCP%20guide%20V1.2.1.md#terminal).  It's quicker but can be confusing if you're new to server administration.
 
 This guide presumes that you have basic terminal/command prompt knowledge and you are running Windows 10. If you don’t know your `dir` from your `cd` then it might be worth getting somebody else (not me) set up this for you! Google has practically all the answers. I cannot be sure if the steps are different in other operating systems, use your own judgement for equivalents. 
 
@@ -196,7 +196,7 @@ Now we’ve set it all up, we should be able to access the server!
 ![image](https://mesub.is-ne.at/aCPwlv.png)
 
 If it all works, then it should look like this:
-![image](hhttps://mesub.is-ne.at/cuihcu.png)
+![image](https://mesub.is-ne.at/cuihcu.png)
 
 ## Step eight: Transferring the bot’s files
 
@@ -244,12 +244,12 @@ Congratulations! You’ve now got a modmail bot that is being run for free and y
 
 # Terminal
 
-Skip this section if you have followed the guide all the way up to here. Here's a [jumplink.](https://github.com/mesub7/modmailbot-community-resources/blob/master/GCP%20guide%20V1.1.md#logs)
+Skip this section if you have followed the guide all the way up to here. Here's a [jumplink.](https://github.com/mesub7/modmailbot-community-resources/blob/master/GCP%20guide%20V1.2.1.md#logs)
 
 This allows you to download and configure the bot from the terminal, no fuss involved. I will not be providing support on this section. 
 (Many thanks to [@dopeghoti](https://github.com/dopeghoti) for providing this method.)
 
-Prequisite: Please follow steps [1](https://github.com/mesub7/modmailbot-community-resources/blob/master/GCP%20guide%20V1.1.md#step-one-discord-developer-portal) and [3](https://github.com/mesub7/modmailbot-community-resources/blob/master/GCP%20guide%20V1.1.md#step-three-google-cloud-platform-nodejs-and-pm2) before continuing this section.
+Prequisite: Please follow steps [1](https://github.com/mesub7/modmailbot-community-resources/blob/master/GCP%20guide%20V1.2.1.md#step-one-discord-developer-portal) and [3](https://github.com/mesub7/modmailbot-community-resources/blob/master/GCP%20guide%20V1.2.1.md#step-three-google-cloud-platform-nodejs-and-pm2) before continuing this section.
 
 1) Make a directory called `src` and navigate to it.
 
@@ -265,7 +265,7 @@ Prequisite: Please follow steps [1](https://github.com/mesub7/modmailbot-communi
 
 7) Run `nano config.ini` and edit the config to your liking.
 
-Continue following the guide from step [9.](https://github.com/mesub7/modmailbot-community-resources/blob/master/GCP%20guide%20V1.1.md#step-nine-inviting-the-bot-to-the-server)
+Continue following the guide from step [9.](https://github.com/mesub7/modmailbot-community-resources/blob/master/GCP%20guide%20V1.2.1.md#step-nine-inviting-the-bot-to-the-server)
 
 # Logs
 
