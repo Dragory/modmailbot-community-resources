@@ -7,7 +7,7 @@ Want to host your modmail bot for free? Don’t want to be ridiculed for using H
 Due to the multiple services/applications that we are using, this guide may be outdated. If this is the case then please let me know here or in the discord server.
 I am aware that there are a few alternative methods to this. If you know what you are doing, then by all means use part of this guide and your own method. Just note that if you do this, I can’t really provide support as your method may be the reason it is not working.
 
-Don't want to download programs? Know your way around the terminal? Check out [this section](https://github.com/mesub7/modmailbot-community-resources/blob/master/GCP%20guide%20V1.1.md#terminal).
+If you know your way a little bit around Linux and want to just download and configure the bot remotely, you can use the Terminal instructions found [here](https://github.com/mesub7/modmailbot-community-resources/blob/master/GCP%20guide%20V1.1.md#terminal).  It's quicker but can be confusing if you're new to server administration.
 
 This guide presumes that you have basic terminal/command prompt knowledge and you are running Windows 10. If you don’t know your `dir` from your `cd` then it might be worth getting somebody else (not me) set up this for you! Google has practically all the answers. I cannot be sure if the steps are different in other operating systems, use your own judgement for equivalents. 
 
@@ -220,6 +220,7 @@ Now it is time to get the bot in your servers!
 3)	Scroll down and select bot.
 
 4)	Add the following permissions: manage channels, manage messages and attach files.
+
 ![image](https://mesub.is-ne.at/WZwOGJ.png)
 
 5)	Navigate to the link generated.
@@ -284,6 +285,7 @@ Once you've done that then:
  a) If there isn't anything about that then navigate to: https://console.cloud.google.com/networking/firewalls/.
  
 You should be here:
+
 ![image](https://mesub.is-ne.at/aC1wLb.png)
 
 4) Click on "Create firewall rule".
@@ -308,11 +310,11 @@ You should be here:
  
  # FAQS and issues
  
- **It says "please run npm install before running the bot", what should I do?**
+**It says "please run npm install before running the bot", what should I do?**
  
 Don't do it. Verify that npm, node and nvm are all installed correctly and make sure that the bot's files are in the right directory (refer to Step three, instruction eight).
  
- **Can I get the log links to use my website?**
+**Can I get the log links to use my website?**
  
 Yes but I don't have a domain and this is out of scope for this guide. I can only say that you need to have a webserver and you also need to set up a reverse proxy.
 
@@ -331,4 +333,4 @@ If you are having issues with anything in this guide and you've tried to help yo
 
 Additonally, if you've got any suggestions on how to improve the guide then please feel free to create an issue or find me in [Dragory's discord server](https://discord.gg/vRuhG9R).
 
-_This guide was last updated on the 14/7/2020._
+_This guide was last updated on the 15/7/2020._
