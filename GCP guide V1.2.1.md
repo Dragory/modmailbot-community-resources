@@ -293,12 +293,19 @@ You should be here:
 
 5) It should have the following details:
  **Name:** anything you want.
+
  Leave priority.
+
  **Direction:** Ingress. We are connecting to the server.
+
  **Action on match:** Allow.
+
  **Targets:** All instances in the network. You can use the other ones if you know what you're doing.
+
  **Source Filter:** IP ranges.
+
  **Source IP ranges:** `0.0.0.0/0`.
+
  **Protocols and ports**: Allow specific protocols and ports. tcp: `8890`.
  
  It should look a bit like this: ![image](https://mesub.is-ne.at/OHQO1j.png)
@@ -321,11 +328,11 @@ Yes but I don't have a domain and this is out of scope for this guide. I can onl
 
 **Can I have more than one installation running at the same time**
 
-Yes. This is also out of scope for the guide.
+Yes. Just ensure that you set a different port and the second installation is in a different folder.
 
 **How long is this free for?**
 
-Until Google decides to change its always free teir to something that isn't usable (unlikely).
+Until Google decides to change its always free tier to something that isn't usable (unlikely).
 
 
 # Support and feedback
