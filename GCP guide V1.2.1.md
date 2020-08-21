@@ -231,7 +231,7 @@ Now it is time to get the bot in your servers!
 ## Step ten: Running the bot
 Now that we’ve set everything up, we should be able to start the bot!
 
-1)	Navigate to the bot’s dictionary (you should know your way around navigation commands in linux).
+1)	Navigate to the bot’s directory (you should know your way around navigation commands in linux).
 
 2)	Run `npm ci`.
 
