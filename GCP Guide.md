@@ -4,8 +4,8 @@
 Want to host your modmail bot for free? Don’t want to be ridiculed for using Heroku, Glitch or repl.it? This guide will take you through how to get the bot running on Google Cloud.
 **DISCLAIMER: I am not responsible for any charges that you face due to you digressing from the guide.**
 
-**Recommended: Configure from the host to save time and to minimise errors**
-If you know your way a little bit around Linux and want to just download and configure the bot remotely, you can use the Terminal instructions found [here](https://github.com/mesub7/modmailbot-community-resources/blob/master/GCP%20guide%20V1.2.1.md#terminal).  It's quicker but can be confusing if you're new to server administration as there is no graphical interface (buttons to press).
+**Highly recommended: Configure from the host to save time and to minimise errors**
+If you know your way a little bit around Linux and want to just download and configure the bot remotely, you can use the Terminal instructions found [here](https://github.com/mesub7/modmailbot-community-resources/blob/master/#terminal). It's quicker but can be confusing if you're new to server administration as there is no graphical interface (buttons to press).
 
 Due to the multiple services/applications that we are using, this guide may be outdated. If this is the case then please let me know here or in the discord server.
 I am aware that there are a few alternative methods to this. If you know what you are doing, then by all means use part of this guide and your own method. Just note that if you do this, I can’t really provide support as your method may be the reason it is not working.
@@ -75,7 +75,7 @@ Select one of the following zones: **us-central1 (lowa), us-east1 (south carolin
   
   **Firewall: Allow both HTTPS and HTTP traffic.**
  
- If you did it all correctly then it should tell you that your first 744 hours (or something along those lines) are free.
+ If you did it all correctly then it should tell you that your first 744 hours (or something along those lines) are free (This would be on the side of the screen).
 ![image](https://mesub.is-ne.at/ZXQAQB.png)
 
 6)	Click create! Once it has loaded it’ll look something like this: ![image](https://mesub.is-ne.at/o3ld33.png)
@@ -126,7 +126,7 @@ _some randomness_.
 
 ![image](https://user-images.githubusercontent.com/49169805/87231709-591e3100-c3b1-11ea-804c-a151ff298100.png)
 
-4)	Change the key comment to **the text before the @ in the terminal!!!** this is your username for later.
+4)	Change the key comment to **the text before the @ in the terminal!!**.
 
 ![image](https://user-images.githubusercontent.com/49169805/87231737-9f739000-c3b1-11ea-8ab9-e02e32c943b4.png)
 
@@ -245,12 +245,12 @@ Congratulations! You’ve now got a modmail bot that is being run for free and y
 
 # Terminal
 
-Skip this section if you have followed the guide all the way up to here. Here's a [jumplink.](https://github.com/mesub7/modmailbot-community-resources/blob/master/GCP%20guide%20V1.2.1.md#logs)
+Skip this section if you have followed the guide all the way up to here. Here's a [jumplink.](https://github.com/mesub7/modmailbot-community-resources/blob/master/GCP%20Guide.md#logs)
 
 This allows you to download and configure the bot from the terminal, no fuss involved. I will not be providing support on this section. 
 (Many thanks to [@dopeghoti](https://github.com/dopeghoti) for providing this method.)
 
-Prequisite: Please follow steps [1](https://github.com/mesub7/modmailbot-community-resources/blob/master/GCP%20guide%20V1.2.1.md#step-one-discord-developer-portal) and [3](https://github.com/mesub7/modmailbot-community-resources/blob/master/GCP%20guide%20V1.2.1.md#step-three-google-cloud-platform-nodejs-and-pm2) before continuing this section.
+Prequisite: Please follow steps [1](https://github.com/mesub7/modmailbot-community-resources/blob/master/GCP%20Guide.md#step-one-discord-developer-portal) and [3](https://github.com/mesub7/modmailbot-community-resources/blob/master/GCP%20Guide.md#step-three-google-cloud-platform-nodejs-and-pm2) before continuing this section.
 
 1) Make a directory called `src` and navigate to it.
 
@@ -266,7 +266,7 @@ Prequisite: Please follow steps [1](https://github.com/mesub7/modmailbot-communi
 
 7) Run `nano config.ini` and edit the config to your liking.
 
-Continue following the guide from step [9.](https://github.com/mesub7/modmailbot-community-resources/blob/master/GCP%20guide%20V1.2.1.md#step-nine-inviting-the-bot-to-the-server)
+Continue following the guide from step [9.](https://github.com/mesub7/modmailbot-community-resources/blob/master/GCP%20Guide.md#step-nine-inviting-the-bot-to-the-server)
 
 # Logs
 
@@ -320,7 +320,7 @@ You should be here:
  
 **It says "please run npm install before running the bot", what should I do?**
  
-Don't do it. Verify that npm, node and nvm are all installed correctly and make sure that the bot's files are in the right directory (refer to Step three, instruction eight).
+Don't do it. Verify that npm, node and nvm are all installed correctly and make sure that the bot's files are in the right directory (refer to Step three, instruction eight). If you are **very, very sure** that this is all correct then refer to the username issue [here](). 
  
 **Can I get the log links to use my website?**
  
