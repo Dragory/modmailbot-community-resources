@@ -341,4 +341,5 @@ If you are having issues with anything in this guide and you've tried to help yo
 
 Additonally, if you've got any suggestions on how to improve the guide then please feel free to create an issue or find me in [Dragory's discord server](https://discord.gg/vRuhG9R).
 
-_This guide was last updated on the 29/7/2020._
+_This guide was last updated on the 26/8/2020._
+Guide revision: 3 (V1.3)
