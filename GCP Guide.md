@@ -82,7 +82,7 @@ Select one of the following zones: **us-central1 (lowa), us-east1 (south carolin
 
 7)	Click the SSH button to view your instance. It should be a command line. ![image](https://mesub.is-ne.at/SECrhd.png)
 
-8)	Note the section before the @. It is very important for later. ![image](https://mesub.is-ne.at/XSyJ8J.png)
+8)	Run `whoami` and note the output. It is **very important** (to avoid user account issues). ![image](https://mesub.is-ne.at/rDJ9sU.png)
 
 ### nvm, node.js and pm2
 We need the node version manager and node.js for the bot and we need pm2 to keep it on all the time, so we’ll take the opportunity to get them now. 
@@ -100,7 +100,7 @@ Now to install node.
 
 Now (at the time of writing) since the bot supports versions 10 to 12, we’ll be installing the last release of v12.
 
-6)	Run `nvm install 12.18.2`.
+6)	Run `nvm install 12.18.3`.
 
 7)	Optional: run `nvm ls` to verify that it is installed.
 
@@ -126,7 +126,7 @@ _some randomness_.
 
 ![image](https://user-images.githubusercontent.com/49169805/87231709-591e3100-c3b1-11ea-804c-a151ff298100.png)
 
-4)	Change the key comment to **the text before the @ in the terminal!!**.
+4)	Change the key comment to **the output of the whoami command you ran earlier!!!**.
 
 ![image](https://user-images.githubusercontent.com/49169805/87231737-9f739000-c3b1-11ea-8ab9-e02e32c943b4.png)
 
@@ -179,10 +179,10 @@ Now we need to upload the bot’s files!
 
 10)	Copy the external IP address from Google Cloud and place it in the host section.
 
-11)	In the username section, put in the key comment (which should be the next before the @ in the terminal) from PuTTY.
+11)	In the username section, put in the output of the `whoami` command (which you should have got from the terminal).
 
 12)	Click ok to save it. (Password Prompt is optional)
-![image](https://mesub.is-ne.at/MgGYPx.png)
+![image](https://mesub.is-ne.at/OfBViJ.png)
 
 ## Step seven: Accessing the server
 Now we’ve set it all up, we should be able to access the server!
@@ -197,7 +197,7 @@ Now we’ve set it all up, we should be able to access the server!
 ![image](https://mesub.is-ne.at/aCPwlv.png)
 
 If it all works, then it should look like this:
-![image](https://mesub.is-ne.at/cuihcu.png)
+![image](https://mesub.is-ne.at/GLe5bZ.png)
 
 ## Step eight: Transferring the bot’s files
 
@@ -320,7 +320,7 @@ You should be here:
  
 **It says "please run npm install before running the bot", what should I do?**
  
-Don't do it. Verify that npm, node and nvm are all installed correctly and make sure that the bot's files are in the right directory (refer to Step three, instruction eight). If you are **very, very sure** that this is all correct then refer to the username issue [here](). 
+Don't do it. Verify that npm, node and nvm are all installed correctly and make sure that the bot's files are in the right directory (refer to Step three, instruction eight). If you are **very, very sure** that this is all correct then refer to the username issue [here](https://github.com/mesub7/modmailbot-community-resources/blob/master/GCP%20Guide.md#User-accounts). 
  
 **Can I get the log links to use my website?**
  
@@ -335,11 +335,43 @@ Yes. Just ensure that you set a different port and the second installation is in
 Until Google decides to change its always free tier to something that isn't usable (unlikely).
 
 
+# User accounts
+
+_This only applies if you are configuring the bot from your system and not doing it all from the terminal_
+
+It is quite important that the username/key comment matches what the `whoami` command outputs, If this doesn't happen then you will either be unable to connect to the server OR your files will be on another user account (which you specified). 
+
+In order to avoid this, **please please please** try to make sure that the username/key-comment matches the output of the `whoami` command. At the very minimum though (or if you aren't using PuTTY), **make sure that the key comment and the username for FileZilla match.** We can change the Linux username (on Google's end) by doing the following:
+
+**IMPORTANT:** Files on your old username will be wiped, be sure that you don't need anything from it. You have been warned. 
+
+1) Connect to your instance.
+
+2) Click on the gear.
+
+![image](https://mesub.is-ne.at/8oHUyO.png)
+
+3) Click _Change Linux username._
+
+![image](https://mesub.is-ne.at/thPt8R.png)
+
+4) Enter the username that the key comment/FileZilla username used.
+
+5) Click change.
+
+You will be connected to the instance under the new username. The files that you transfered over should be there.
+
+**Note:** It is very very likely that you will need to install all of the [necessary software again](https://github.com/mesub7/modmailbot-community-resources/blob/master/GCP%20Guide.md#step-three-google-cloud-platform-nodejs-and-pm2) (it seems to install on a per user basis).
+
+Of course you can easily avoid this by [configuring from the terminal](https://github.com/mesub7/modmailbot-community-resources/blob/master/#terminal).
+
 # Support and feedback
 
 If you are having issues with anything in this guide and you've tried to help yourself, then I am in [Dragory's discord server](https://discord.gg/vRuhG9R) (mesub#0556). I may not be online when you post your question though.
 
 Additonally, if you've got any suggestions on how to improve the guide then please feel free to create an issue or find me in [Dragory's discord server](https://discord.gg/vRuhG9R).
+
+
 
 _This guide was last updated on the 26/8/2020._
 Guide revision: 3 (V1.3)
