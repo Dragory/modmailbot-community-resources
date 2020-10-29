@@ -11,9 +11,9 @@ Plugins are third party code and the bot's developers are not responsible for an
 * **Install:** https://github.com/MMPlugins/Ping
 * **Author:** [Eight8-7020](https://github.com/Eight8-7020)  
 
-#### MMPlugins/MessageClose
+#### MMPlugins/CloseAddons
 * Close add-ons - more ways to close a thread! This adds Reason closure and Message closure.
-* **Install:** https://github.com/MMPlugins/MessageClose
+* **Install:** https://github.com/MMPlugins/CloseAddons
 * **Author:** [Eight8-7020](https://github.com/Eight8-7020)  
 
 #### MMPlugins/Help
