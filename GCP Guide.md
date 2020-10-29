@@ -4,6 +4,8 @@
 Want to host your modmail bot for free? Don’t want to be ridiculed for using Heroku, Glitch or repl.it? This guide will take you through how to get the bot running on Google Cloud.
 **DISCLAIMER: I am not responsible for any charges that you face due to you digressing from the guide.**
 
+**(Need to update your installation? Check [this.)](https://github.com/Dragory/modmailbot/blob/master/docs/updating.md)**
+
 **Highly recommended: Configure from the host to save time and to minimise errors**
 If you know your way a little bit around Linux and want to just download and configure the bot remotely, you can use the Terminal instructions found [here](https://github.com/mesub7/modmailbot-community-resources/blob/master/#terminal). It's quicker but can be confusing if you're new to server administration as there is no graphical interface (buttons to press).
 
