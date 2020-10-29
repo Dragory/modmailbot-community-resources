@@ -10,7 +10,7 @@ If you know your way a little bit around Linux and want to just download and con
 Due to the multiple services/applications that we are using, this guide may be outdated. If this is the case then please let me know here or in the discord server.
 I am aware that there are a few alternative methods to this. If you know what you are doing, then by all means use part of this guide and your own method. Just note that if you do this, I can’t really provide support as your method may be the reason it is not working.
 
-This guide presumes that you have basic terminal/command prompt knowledge and you are running Windows 10. If you don’t know your `dir` from your `cd` then it might be worth getting somebody else (not me) set up this for you! Google has practically all the answers. I cannot be sure if the steps are different in other operating systems, use your own judgement for equivalents. 
+This guide presumes that you have basic terminal/command prompt knowledge and you are running Windows 10. If you don’t know your `dir` from your `cd` then it might be worth getting somebody else (not me) set up this for you! Google has all the information that you need. I cannot be sure if the steps are different in other operating systems, use your own judgement for equivalents. 
 
 So, with that out of the way, let us begin!
 
@@ -19,18 +19,23 @@ So, with that out of the way, let us begin!
 2)	Give it a name.
 3)	Go to the bot section (which is found on the left hand navigation pane) and click add bot.
 4)	Confirm your choice.
-5)	(Optional) Customise your bot. You can change the name and add a profile picture if you wish. You can also make the bot private (so only you can invite it). **Do not change the OAUTH2 code grant setting.**
+5) Ensure that the **Server Members intent** is enabled.
+
+![image](https://mesub.is-ne.at/STWMKt.png)
+6) (Optional) Customise your bot. You can change the name and add a profile picture if you wish. You can also make the bot private (so only you can invite it). **Do not change the OAUTH2 code grant setting.**
+
 Don’t forget to save!
 
 We’ll be coming back to this later so make sure that you keep this tab open!
 
 ## Step two: downloading and configuring the bot
-1)	Navigate to https://github.com/Dragory/modmailbot/releases and download the latest version (as of me writing this it was v2.30.1).
+1)	Navigate to https://github.com/Dragory/modmailbot/releases and download the latest version (as of me updating this it was v3.0.3).
 2)	Download the zip and extract it to a folder.
 3)	Copy and paste the `example.config.ini` file and rename it to `config.ini`.
 ![image](https://user-images.githubusercontent.com/49169805/87231360-7dc4d980-c3ae-11ea-86c4-8a59e6199bb0.png)
-4)	Open the config.ini file and edit it to your liking. You’ll need the bot token from the developer portal as well as a `mainGuildId` and a `mailGuildId`.
+4)	Open the config.ini file and edit it to your liking. You’ll need the bot token from the developer portal as well as a `mainServerId` and a `inboxServerId`.
 For information on what can go in the config file, check [the offical documentation.](https://github.com/Dragory/modmailbot/blob/master/docs/configuration.md)
+
 ![image](https://user-images.githubusercontent.com/49169805/87231371-9a611180-c3ae-11ea-8a1b-b560e9a4f08a.png)
 
 5)	Save the config file.
@@ -58,7 +63,7 @@ Consult: https://cloud.google.com/billing/docs/how-to/payment-methods for more i
 5)	**Follow this very carefully if you want it to be free:**
 
 a.	Give it a name.
-Select one of the following zones: **us-central1 (lowa), us-east1 (south carolina) or us-west1 (oregon).** I’m picking us-west1 as it is closest to Discord headquarters in San Francisco. I would leave the zone but change it if you wish.
+Select one of the following zones: **us-central1 (lowa), us-east1 (south carolina) or us-west1 (oregon).** I’m picking us-east1 as it is closest to Discord's API servers. I would leave the zone but change it if you wish.
 
   b.	Machine configuration should be:
   **General Purpose Series: N1.**
@@ -98,9 +103,9 @@ Now to install node.
 
 5)	List the versions of node available by running `nvm ls-remote`.
 
-Now (at the time of writing) since the bot supports versions 10 to 12, we’ll be installing the last release of v12.
+Now (at the time of writing) since the bot supports versions 12 to 14, for compatibility's sake, we'll install the latest version of V12 (feel free to install any version between 12 and 14).
 
-6)	Run `nvm install 12.18.3`.
+6)	Run `nvm install 12.19.0` (or whatever version you want that's between V12 and V14 (like 14.13.1 for example).
 
 7)	Optional: run `nvm ls` to verify that it is installed.
 
@@ -115,7 +120,7 @@ Now for pm2.
 We would have gone with FTP (File Transfer Protocol) but I was advised to use SFTP (Secure File Transfer Protocol) so here we are
 (oh and using SFTP saves us a few steps).
 
-1)	Download and install PuTTY [here.](https://www.chiark.greenend.org.uk/~sgtatham/putty/)
+1)	Download and install PuTTYgen [32-bit](https://the.earth.li/~sgtatham/putty/latest/w32/puttygen.exe) or [64-bit](https://the.earth.li/~sgtatham/putty/latest/w64/puttygen.exe)
 
 2)	Locate and open PuTTYgen.
 
@@ -170,7 +175,7 @@ Now we need to upload the bot’s files!
 6)	Press ok.
 ![image](https://mesub.is-ne.at/xqbyg8.png)
 
-7)	Navigate to File > site manager.
+7)	Navigate to File > Site Manager.
 ![image](https://mesub.is-ne.at/NYgGfw.png)
 
 8)	Click new site.
@@ -252,13 +257,13 @@ This allows you to download and configure the bot from the terminal, no fuss inv
 
 Prequisite: Please follow steps [1](https://github.com/mesub7/modmailbot-community-resources/blob/master/GCP%20Guide.md#step-one-discord-developer-portal) and [3](https://github.com/mesub7/modmailbot-community-resources/blob/master/GCP%20Guide.md#step-three-google-cloud-platform-nodejs-and-pm2) before continuing this section.
 
-1) Make a directory called `src` and navigate to it.
+1) Make a directory and navigate to it.
 
 2) Install wget (`sudo apt install wget`)
 
-3) Run `wget https://github.com/Dragory/modmailbot/archive/v2.30.1.tar.gz`
+3) Run `wget https://github.com/Dragory/modmailbot/archive/v3.0.3.tar.gz`
 
-4) Run `tar zxf v2.30.1.tar.gz`
+4) Run `tar zxf v3.0.3.tar.gz`
 
 5) Naviage to the directory it creates.
 
@@ -328,12 +333,15 @@ Yes but I don't have a domain and this is out of scope for this guide. I can onl
 
 **Can I have more than one installation running at the same time**
 
-Yes. Just ensure that you set a different port and the second installation is in a different folder.
+Yes. Just ensure that you set a different port and the second installation is in a different folder. You can also use environment variables.
 
 **How long is this free for?**
 
 Until Google decides to change its always free tier to something that isn't usable (unlikely).
 
+**I get an error about gateway intents or the bot is stuck on "Connectng to Discord..."**
+
+Make sure that the **server members intent** is enabled.
 
 # User accounts
 
@@ -373,5 +381,5 @@ Additonally, if you've got any suggestions on how to improve the guide then plea
 
 
 
-_This guide was last updated on the 26/8/2020._
-Guide revision: 3 (V1.3)
+_This guide was last updated on the 29/10/2020._
+Guide revision: 4 (V1.4)
