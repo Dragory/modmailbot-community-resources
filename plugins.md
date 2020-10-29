@@ -5,7 +5,8 @@ Note that having a plugin listed on this page is not an endorsement or guarantee
 Plugins are third party code and the bot's developers are not responsible for any damage caused by them.
 
 ## Plugin list
-#### MMPlugins
+
+### MMPlugins
 ###### All plugins must NOT be used for commercial purposes.
 Make sure to be running ModMail v3.0.3 or later. 
 
