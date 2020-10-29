@@ -7,11 +7,6 @@ This document lists some of the community plugins available for Modmail.
 
 ## Plugin list
 
-#### MMPlugins/Ping
-* Ping command - view the bot's message latency
-* **Install:** https://github.com/MMPlugins/Ping
-* **Author:** [Eight8-7020](https://github.com/Eight8-7020)  
-
 #### MMPlugins/CloseAddons
 * Close add-ons - more ways to close a thread! This adds Reason closure and Message closure.
 * **Install:** https://github.com/MMPlugins/CloseAddons
@@ -20,4 +15,14 @@ This document lists some of the community plugins available for Modmail.
 #### MMPlugins/Help
 * Help command - Get linked to the command docs 🎉
 * **Install:** https://github.com/MMPlugins/Help
+* **Author:** [Eight8-7020](https://github.com/Eight8-7020)  
+
+#### MMPlugins/LogSearch
+* Allows you to search through the logs of a user with specific search terms
+* **Install:** https://github.com/MMPlugins/LogSearch
+* **Author:** [DarkView](https://github.com/DarkView)  
+
+#### MMPlugins/Ping
+* Ping command - view the bot's message latency
+* **Install:** https://github.com/MMPlugins/Ping
 * **Author:** [Eight8-7020](https://github.com/Eight8-7020)  
