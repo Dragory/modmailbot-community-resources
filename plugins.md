@@ -6,17 +6,17 @@ Plugins are third party code and the bot's developers are not responsible for an
 
 ## Plugin list
 
-### MMPlugins/Ping
+#### MMPlugins/Ping
 * Ping command - view the bot's message latency
 * **Install:** https://github.com/MMPlugins/Ping
 * **Author:** [Eight8-7020](https://github.com/Eight8-7020)  
 
-### MMPlugins/MessageClose
+#### MMPlugins/MessageClose
 * Close add-ons - more ways to close a thread! This adds Reason closure and Message closure.
 * **Install:** https://github.com/MMPlugins/MessageClose
 * **Author:** [Eight8-7020](https://github.com/Eight8-7020)  
 
-### MMPlugins/Help
+#### MMPlugins/Help
 * Help command - Get linked to the command docs 🎉
 * **Install:** https://github.com/MMPlugins/Help
 * **Author:** [Eight8-7020](https://github.com/Eight8-7020)  
