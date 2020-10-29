@@ -5,3 +5,7 @@ For official documentation, [click here to see the bot documentation](https://gi
 
 ## Contributing
 Want to submit a guide or other resource? Open a pull request!
+
+## Resources
+* [List of community plugins](./plugins.md)
+* [Google Cloud Platform hosting guide](./GCP%20guide%20V1.2.1.md) by [@mesub7](https://github.com/mesub7)
