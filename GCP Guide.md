@@ -36,6 +36,7 @@ We’ll be coming back to this later so make sure that you keep this tab open!
 ![image](https://user-images.githubusercontent.com/49169805/87231360-7dc4d980-c3ae-11ea-86c4-8a59e6199bb0.png)
 4)	Open the config.ini file and edit it to your liking. You’ll need the bot token from the developer portal as well as a `mainServerId` and a `inboxServerId`.
 For information on what can go in the config file, check [the official documentation.](https://github.com/Dragory/modmailbot/blob/master/docs/configuration.md)
+
 ![image](https://user-images.githubusercontent.com/49169805/87231371-9a611180-c3ae-11ea-8a1b-b560e9a4f08a.png)
 
 5)	Save the config file.
@@ -194,6 +195,7 @@ Now we need to upload the bot’s files!
 Now we’ve set it all up, we should be able to access the server!
 
 1)	 Navigate to File > site manager.
+
 ![image](https://mesub.is-ne.at/NYgGfw.png)
 
 2)	Click connect.
