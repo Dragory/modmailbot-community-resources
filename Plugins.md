@@ -1,8 +1,9 @@
 # Plugins
 This document lists some of the community plugins available for Modmail.
 
-Note that having a plugin listed on this page is not an endorsement or guarantee of the plugin's safety.
-Plugins are third party code and the bot's developers are not responsible for any damage caused by them.
+## Note!
+* Having a plugin listed on this page is **not an endorsement or a guarantee of the plugin's safety.**
+* Plugins are third party code and Modmail Bot's developers are not responsible for any damage caused by them.
 
 ## Plugin list
 
@@ -11,9 +12,9 @@ Plugins are third party code and the bot's developers are not responsible for an
 * **Install:** https://github.com/MMPlugins/Ping
 * **Author:** [Eight8-7020](https://github.com/Eight8-7020)  
 
-#### MMPlugins/MessageClose
+#### MMPlugins/CloseAddons
 * Close add-ons - more ways to close a thread! This adds Reason closure and Message closure.
-* **Install:** https://github.com/MMPlugins/MessageClose
+* **Install:** https://github.com/MMPlugins/CloseAddons
 * **Author:** [Eight8-7020](https://github.com/Eight8-7020)  
 
 #### MMPlugins/Help

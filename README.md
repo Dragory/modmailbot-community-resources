@@ -7,5 +7,6 @@ For official documentation, [click here to see the bot documentation](https://gi
 Want to submit a guide or other resource? Open a pull request!
 
 ## Resources
-* [List of community plugins](./plugins.md)
+* [List of community plugins](./Plugins.md)
 * [Google Cloud Platform hosting guide](./GCP%20Guide.md) by [@mesub7](https://github.com/mesub7)
+* [Thread Permissions](./Thread%20Permissions.md) by [@Eegras](https://github.com/Eegras)
