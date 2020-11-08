@@ -35,7 +35,7 @@ We’ll be coming back to this later so make sure that you keep this tab open!
 3)	Copy and paste the `example.config.ini` file and rename it to `config.ini`.
 ![image](https://user-images.githubusercontent.com/49169805/87231360-7dc4d980-c3ae-11ea-86c4-8a59e6199bb0.png)
 4)	Open the config.ini file and edit it to your liking. You’ll need the bot token from the developer portal as well as a `mainServerId` and a `inboxServerId`.
-For information on what can go in the config file, check [the offical documentation.](https://github.com/Dragory/modmailbot/blob/master/docs/configuration.md)
+For information on what can go in the config file, check [the official documentation.](https://github.com/Dragory/modmailbot/blob/master/docs/configuration.md)
 ![image](https://user-images.githubusercontent.com/49169805/87231371-9a611180-c3ae-11ea-8a1b-b560e9a4f08a.png)
 
 5)	Save the config file.
@@ -208,7 +208,8 @@ If it all works, then it should look like this:
 
 ## Step eight: Transferring the bot’s files
 
-1)	Locate your bot’s files in the internal navigator.
+1)	Locate your bot’s files in the internal navigator. 
+
 ![image](https://mesub.is-ne.at/Ye5tRh.png)
 
 2)	Drag the files over.
@@ -221,6 +222,7 @@ Now it is time to get the bot in your servers!
 1)	Go back to the discord developer page that you should have left open.
 
 2)	Go to the hamburger menu and click on oauth2.
+
 ![image](https://mesub.is-ne.at/g4n1YW.png)
 
 3)	Scroll down and select bot.
@@ -249,12 +251,12 @@ Congratulations! You’ve now got a modmail bot that is being run for free and y
 
 # Terminal
 
-Skip this section if you have followed the guide all the way up to here. Here's a [jumplink.](https://github.com/mesub7/modmailbot-community-resources/blob/master/GCP%20Guide.md#logs)
+Skip this section if you have followed the guide all the way up to here. Here's a [jumplink.](https://github.com/Dragory/modmailbot-community-resources/blob/master/GCP%20Guide.md#logs)
 
 This allows you to download and configure the bot from the terminal, no fuss involved. I will not be providing support on this section. 
 (Many thanks to [@dopeghoti](https://github.com/dopeghoti) for providing this method.)
 
-Prequisite: Please follow steps [1](https://github.com/mesub7/modmailbot-community-resources/blob/master/GCP%20Guide.md#step-one-discord-developer-portal) and [3](https://github.com/mesub7/modmailbot-community-resources/blob/master/GCP%20Guide.md#step-three-google-cloud-platform-nodejs-and-pm2) before continuing this section.
+Prerequisite: Please follow steps [1](https://github.com/Dragory/modmailbot-community-resources/blob/master/GCP%20Guide.md#step-one-discord-developer-portal) and [3](https://github.com/Dragory/modmailbot-community-resources/blob/master/GCP%20Guide.md#step-three-google-cloud-platform-nodejs-and-pm2) before continuing this section.
 
 1) Make a directory and navigate to it.
 
@@ -264,19 +266,19 @@ Prequisite: Please follow steps [1](https://github.com/mesub7/modmailbot-communi
 
 4) Run `tar zxf v3.0.3.tar.gz`
 
-5) Naviage to the directory it creates.
+5) Navigate to the directory it creates.
 
 6) Run `cp config.{example.,}ini`
 
 7) Run `nano config.ini` and edit the config to your liking.
 
-Continue following the guide from step [9.](https://github.com/mesub7/modmailbot-community-resources/blob/master/GCP%20Guide.md#step-nine-inviting-the-bot-to-the-server)
+Continue following the guide from step [9.](https://github.com/Dragory/modmailbot-community-resources/blob/master/GCP%20Guide.md#step-nine-inviting-the-bot-to-the-server)
 
 # Logs
 
 We've got the bot working now but you may want to have working logs. If this is the case then follow the instructions below.
 
-Prequisite: Port 8890 (tcp) has to be opened. If you don't know how to open a port then check [PortForward's website](http://portforward.com/).
+Prequisite: Port 8890 (TCP) has to be opened. If you don't know how to open a port then check [PortForward's website](http://portforward.com/).
 
 Once you've done that then:
 
@@ -324,7 +326,7 @@ You should be here:
  
 **It says "please run npm install before running the bot", what should I do?**
  
-Don't do it. Verify that npm, node and nvm are all installed correctly and make sure that the bot's files are in the right directory (refer to Step three, instruction eight). If you are **very, very sure** that this is all correct then refer to the username issue [here](https://github.com/mesub7/modmailbot-community-resources/blob/master/GCP%20Guide.md#User-accounts). 
+Don't do it. Verify that npm, node and nvm are all installed correctly and make sure that the bot's files are in the right directory (refer to Step three, instruction eight). If you are **very, very sure** that this is all correct then refer to the username issue [here](https://github.com/Dragory/modmailbot-community-resources/blob/master/GCP%20Guide.md#user-accounts). 
  
 **Can I get the log links to use my website?**
  
@@ -338,7 +340,7 @@ Yes. Just ensure that you set a different port and the second installation is in
 
 Until Google decides to change its always free tier to something that isn't usable (unlikely).
 
-**I get an error about gateway intents or the bot is stuck on "Connectng to Discord..."**
+**I get an error about gateway intents or the bot is stuck on "Connecting to Discord..."**
 
 Make sure that the **server members intent** is enabled.
 
@@ -366,9 +368,9 @@ In order to avoid this, **please please please** try to make sure that the usern
 
 5) Click change.
 
-You will be connected to the instance under the new username. The files that you transfered over should be there.
+You will be connected to the instance under the new username. The files that you transferred over should be there.
 
-**Note:** It is very very likely that you will need to install all of the [necessary software again](https://github.com/mesub7/modmailbot-community-resources/blob/master/GCP%20Guide.md#step-three-google-cloud-platform-nodejs-and-pm2) (it seems to install on a per user basis).
+**Note:** It is very very likely that you will need to install all of the [necessary software again](https://github.com/Dragory/modmailbot-community-resources/blob/master/GCP%20Guide.md#nvm-nodejs-and-pm2) (it seems to install on a per user basis).
 
 Of course you can easily avoid this by [configuring from the terminal](https://github.com/mesub7/modmailbot-community-resources/blob/master/#terminal).
 
@@ -376,9 +378,9 @@ Of course you can easily avoid this by [configuring from the terminal](https://g
 
 If you are having issues with anything in this guide and you've tried to help yourself, then I am in [Dragory's discord server](https://discord.gg/vRuhG9R) (mesub#0556). I may not be online when you post your question though.
 
-Additonally, if you've got any suggestions on how to improve the guide then please feel free to create an issue or find me in [Dragory's discord server](https://discord.gg/vRuhG9R).
+Additionally, if you've got any suggestions on how to improve the guide then please feel free to create an issue or find me in [Dragory's discord server](https://discord.gg/vRuhG9R).
 
 
 
-_This guide was last updated on the 29/10/2020._
-Guide revision: 4 (V1.4)
+_This guide was last updated on the 8/11/2020._
+Guide revision: 5 (V1.4.1)
