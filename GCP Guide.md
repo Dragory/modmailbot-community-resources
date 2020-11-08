@@ -7,7 +7,7 @@ Want to host your modmail bot for free? Don’t want to be ridiculed for using H
 **(Need to update your installation? Check [this.)](https://github.com/Dragory/modmailbot/blob/master/docs/updating.md)**
 
 **Highly recommended: Configure from the host to save time and to minimise errors**
-If you know your way a little bit around Linux and want to just download and configure the bot remotely, you can use the Terminal instructions found [here](https://github.com/mesub7/modmailbot-community-resources/blob/master/#terminal). It's quicker but can be confusing if you're new to server administration as there is no graphical interface (buttons to press).
+If you know your way a little bit around Linux and want to just download and configure the bot remotely, you can use the Terminal instructions found [here](https://github.com/Dragory/modmailbot-community-resources/blob/master/GCP%20Guide.md#terminal). It's quicker but can be confusing if you're new to server administration as there is no graphical interface (buttons to press).
 
 Due to the multiple services/applications that we are using, this guide may be outdated. If this is the case then please let me know here or in the discord server.
 I am aware that there are a few alternative methods to this. If you know what you are doing, then by all means use part of this guide and your own method. Just note that if you do this, I can’t really provide support as your method may be the reason it is not working.
@@ -22,7 +22,6 @@ So, with that out of the way, let us begin!
 3)	Go to the bot section (which is found on the left hand navigation pane) and click add bot.
 4)	Confirm your choice.
 5) Ensure that the **Server Members intent** is enabled.
-
 ![image](https://mesub.is-ne.at/STWMKt.png)
 6) (Optional) Customise your bot. You can change the name and add a profile picture if you wish. You can also make the bot private (so only you can invite it). **Do not change the OAUTH2 code grant setting.**
 
@@ -37,7 +36,6 @@ We’ll be coming back to this later so make sure that you keep this tab open!
 ![image](https://user-images.githubusercontent.com/49169805/87231360-7dc4d980-c3ae-11ea-86c4-8a59e6199bb0.png)
 4)	Open the config.ini file and edit it to your liking. You’ll need the bot token from the developer portal as well as a `mainServerId` and a `inboxServerId`.
 For information on what can go in the config file, check [the offical documentation.](https://github.com/Dragory/modmailbot/blob/master/docs/configuration.md)
-
 ![image](https://user-images.githubusercontent.com/49169805/87231371-9a611180-c3ae-11ea-8a1b-b560e9a4f08a.png)
 
 5)	Save the config file.
@@ -83,6 +81,7 @@ Select one of the following zones: **us-central1 (lowa), us-east1 (south carolin
   **Firewall: Allow both HTTPS and HTTP traffic.**
  
  If you did it all correctly then it should tell you that your first 744 hours (or something along those lines) are free (This would be on the side of the screen).
+
 ![image](https://mesub.is-ne.at/ZXQAQB.png)
 
 6)	Click create! Once it has loaded it’ll look something like this: ![image](https://mesub.is-ne.at/o3ld33.png)
@@ -129,12 +128,11 @@ We would have gone with FTP (File Transfer Protocol) but I was advised to use SF
 ![image](https://user-images.githubusercontent.com/49169805/87231702-486dbb00-c3b1-11ea-839c-c7728c44b061.png)
 
 3)	Once the window has opened, click on generate (no need to change any settings) and move your mouse around to generate
-_some randomness_.
+_some randomness_. 
 
 ![image](https://user-images.githubusercontent.com/49169805/87231709-591e3100-c3b1-11ea-804c-a151ff298100.png)
 
 4)	Change the key comment to **the output of the whoami command you ran earlier!!!**.
-
 ![image](https://user-images.githubusercontent.com/49169805/87231737-9f739000-c3b1-11ea-8ab9-e02e32c943b4.png)
 
 5)	Save the private key. Keep it safe as you’ll need it later!
@@ -175,6 +173,7 @@ Now we need to upload the bot’s files!
 5)	Click “Add key file” and add the **private** key file that you generated earlier.
 
 6)	Press ok.
+
 ![image](https://mesub.is-ne.at/xqbyg8.png)
 
 7)	Navigate to File > Site Manager.
@@ -194,7 +193,8 @@ Now we need to upload the bot’s files!
 ## Step seven: Accessing the server
 Now we’ve set it all up, we should be able to access the server!
 
-1)	 Navigate to File > site manager. ![image](https://mesub.is-ne.at/NYgGfw.png)
+1)	 Navigate to File > site manager.
+![image](https://mesub.is-ne.at/NYgGfw.png)
 
 2)	Click connect.
 
@@ -209,7 +209,6 @@ If it all works, then it should look like this:
 ## Step eight: Transferring the bot’s files
 
 1)	Locate your bot’s files in the internal navigator.
-
 ![image](https://mesub.is-ne.at/Ye5tRh.png)
 
 2)	Drag the files over.
@@ -222,13 +221,11 @@ Now it is time to get the bot in your servers!
 1)	Go back to the discord developer page that you should have left open.
 
 2)	Go to the hamburger menu and click on oauth2.
-
 ![image](https://mesub.is-ne.at/g4n1YW.png)
 
 3)	Scroll down and select bot.
 
 4)	Add the following permissions: manage channels, manage messages and attach files.
-
 ![image](https://mesub.is-ne.at/WZwOGJ.png)
 
 5)	Navigate to the link generated.
