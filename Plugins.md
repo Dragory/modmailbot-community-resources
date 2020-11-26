@@ -17,6 +17,11 @@ This document lists some of the community plugins available for Modmail.
 * **Install:** https://github.com/MMPlugins/Help
 * **Author:** [Eight8-7020](https://github.com/Eight8-7020)  
 
+#### MMPlugins/HexedHelp
+* Embedded Help command - Get a embedded list of the commands
+* **Install:** https://github.com/MMPlugins/HexedHelp
+* **Author:** [Hexed](https://github.com/Hexed)  
+
 #### MMPlugins/LogSearch
 * Allows you to search through the logs of a user with specific search terms
 * **Install:** https://github.com/MMPlugins/LogSearch
