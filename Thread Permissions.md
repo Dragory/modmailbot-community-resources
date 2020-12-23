@@ -7,6 +7,5 @@ If deployed in a single-server setup you must ensure that threads are created in
 3. Create your Log Channel there ( `logChannelId` )
 4. (optional) Create your Attachments channel ( `attachmentStorageChannelId` ) in there, if you choose to use [`attachmentStorage = discord`](https://github.com/Dragory/modmailbot/blob/master/docs/configuration.md#attachmentstorage)
 5. Set [`categoryAutomation.newThread`](https://github.com/Dragory/modmailbot/blob/master/docs/configuration.md#categoryautomationnewthread) to that category.
-6. If your bot is currently running, restart it.
-
-**PLEASE NOTE:** with modified Discord clients users are able to see channel names even if your permissions don't allow them to see the channel.  
+6. (optional) Consider setting [`anonymizeChannelName = on`](https://github.com/Dragory/modmailbot/blob/master/docs/configuration.md#anonymizechannelname).  Modified Discord clients can be configured to show channels and categories that the user shouldn't be able to see.  Using this method a user could see who is opening threads with your Modmail.  This is limited soley to the name of the channel/category and it's description; the contents of the channel are still private.
+7. If your bot is currently running, restart it.
