@@ -31,3 +31,8 @@ This document lists some of the community plugins available for Modmail.
 * Ping command - view the bot's message latency
 * **Install:** https://github.com/MMPlugins/Ping
 * **Author:** [Eight8-7020](https://github.com/Eight8-7020)  
+
+#### MMPlugins/ReactionThreads
+* Allows users to open new threads by reacting to emojis. Valid reactions configured via commands.
+* **Install:** https://github.com/MMPlugins/ReactionThreads
+* **Author:** [DarkView](https://github.com/DarkView) 
