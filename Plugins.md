@@ -36,3 +36,8 @@ This document lists some of the community plugins available for Modmail.
 * Allows users to open new threads by reacting to emojis. Valid reactions configured via commands.
 * **Install:** https://github.com/MMPlugins/ReactionThreads
 * **Author:** [DarkView](https://github.com/DarkView) 
+
+#### funkyhippo/modmailbot-formatter
+* Formats your logs by colour-coding the content. Demo [here](https://funkyhippo.github.io/modmailbot-formatter/index.html).
+* **Install:** https://github.com/funkyhippo/modmailbot-formatter
+* **Author:** [funkyhippo](https://github.com/funkyhippo)
