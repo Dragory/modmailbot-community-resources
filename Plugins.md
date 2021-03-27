@@ -41,3 +41,8 @@ This document lists some of the community plugins available for Modmail.
 * Formats your logs by colour-coding the content. Demo [here](https://funkyhippo.github.io/modmailbot-formatter/index.html).
 * **Install:** https://github.com/funkyhippo/modmailbot-formatter
 * **Author:** [funkyhippo](https://github.com/funkyhippo)
+
+#### DarkView/MMEmergencyLink
+* Allows you to get a message link in the actual DM channel, mainly used for T&S reports of self-harm threats.
+* **Install:** https://github.com/DarkView/MMEmergencyLink
+* **Author:** [DarkView](https://github.com/DarkView)
