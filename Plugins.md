@@ -12,6 +12,11 @@ This document lists some of the community plugins available for Modmail.
 * **Install:** https://github.com/MMPlugins/CloseAddons
 * **Author:** [Eight8-7020](https://github.com/Eight8-7020)  
 
+#### MMPlugins/EmbedMessages
+* Embeds! Converts all bot-managed message types to embeds (with lots of config options)
+* **Install:** https://github.com/MMPlugins/EmbedMessages
+* **Author:** [DarkView](https://github.com/DarkView)  
+
 #### MMPlugins/Help
 * Help command - Get linked to the command docs 🎉
 * **Install:** https://github.com/MMPlugins/Help
