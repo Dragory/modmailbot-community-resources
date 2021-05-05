@@ -37,6 +37,11 @@ This document lists some of the community plugins available for Modmail.
 * **Install:** https://github.com/MMPlugins/ReactionThreads
 * **Author:** [DarkView](https://github.com/DarkView) 
 
+#### MMPlugins/replyPrefix
+* Allows users to set a prefix that will appear in front of replies from them.
+* **Install:** https://github.com/MMPlugins/replyPrefix
+* **Author:** [DarkView](https://github.com/DarkView) 
+
 #### funkyhippo/modmailbot-formatter
 * Formats your logs by colour-coding the content. Demo [here](https://funkyhippo.github.io/modmailbot-formatter/index.html).
 * **Install:** https://github.com/funkyhippo/modmailbot-formatter
