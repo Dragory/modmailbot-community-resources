@@ -1,9 +1,13 @@
-# How to host your modmail bot on Google Cloud Platform for free | Made by [@mesub7](https://github.com/mesub7)
+# How to host your modmail bot on Oracle Cloud for free | Made by [@mesub7](https://github.com/mesub7)
 
-Want to host your modmail bot for free? Don’t want to be ridiculed for using Heroku, Glitch or repl.it? This guide will take you through how to get the bot running on Google Cloud.
+Want to host your modmail bot for free? Don’t want to be ridiculed for using Heroku, Glitch or repl.it? This guide will take you through how to get the bot running on Oracle Cloud.
+
+Following the success of my Google Cloud Platform Guide, I've deciced to make one for Oracle Cloud as well.
+I would strongly recommend that you use [Google Cloud Platform](https://github.com/Dragory/modmailbot-community-resources/blob/master/GCP%20Guide.md) as the set-up is much less confusing and there's added benefits to using it (Google brand recognition, an app that you can use to SSH into etc). However, you may pick Oracle because you plan to run multiple bots [(which google can [eventually] charge for)](https://www.reddit.com/r/googlecloud/comments/lxjf07/getting_charged_for_egress_under_1gbmonth/) or you just don't want to use Google.
+
 **DISCLAIMER: I am not responsible for any charges that you face due to you digressing from the guide.**
 
-**(Need to update your installation? Check [this.])(https://github.com/Dragory/modmailbot/blob/master/docs/updating.md)**
+**(Need to update your installation? Check [this.](https://github.com/Dragory/modmailbot/blob/master/docs/updating.md))**
 
 **Highly recommended: Configure from the host to save time and to minimise errors**
 If you know your way a little bit around Linux and want to just download and configure the bot remotely, you can use the Terminal instructions found [here](https://github.com/Dragory/modmailbot-community-resources/blob/master/GCP%20Guide.md#terminal). It's quicker but can be confusing if you're new to server administration as there is no graphical interface (buttons to press).
@@ -35,8 +39,10 @@ We’ll be coming back to this later so make sure that you keep this tab open!
 ![image](https://user-images.githubusercontent.com/49169805/87231360-7dc4d980-c3ae-11ea-86c4-8a59e6199bb0.png)
 4)	Open the config.ini file and edit it to your liking. You’ll need the bot token from the developer portal as well as a `mainServerId` and an `inboxServerId`.
 For information on what can go in the config file, check [the official documentation.](https://github.com/Dragory/modmailbot/blob/master/docs/configuration.md)
-
 ![image](https://user-images.githubusercontent.com/49169805/87231371-9a611180-c3ae-11ea-8a1b-b560e9a4f08a.png)
-
 5)	Save the config file.
 6)	Make sure you know where you’ve kept this folder, you will need it later on.
+
+## Step three: Oracle Cloud, nodeJS & PM2
+This is where we'll be hosting the bot.
+1) Navigate to https://oracle.com/cloud/free and click 'Start for free'
