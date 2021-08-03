@@ -112,7 +112,7 @@ We can then connect to it with an SSH client, since Oracle doesn't offer SSH via
 16) Open your SSH client of choice (I choose PuTTY since it's already installed).
 17) On the side pane, click the + by SSH and then click Auth (not the + though) ![image](https://mesub.is-ne.at/565Vfk35Y.png)
 18) Click 'Browse' by 'Private key for authentication' and select the **private key** ![image](https://mesub.is-ne.at/565VF98oB.png)
-19) Scroll back up the side pane and click session (not the -) ![image](https://mesub.is-ne.at/565WnpJBM)
+19) Scroll back up the side pane and click session (not the -) ![image](https://mesub.is-ne.at/565WnpJBM.png)
 20) Paste the public IP adress (which you'll find on the instance page) into the IP address field, click Default Settings, click save and then click Open. (This ensures that the IP adress is saved for next time you open the PuTTY) 
 a.	If any prompt comes up about the host's fingerprint/connecting to it, click yes.
 21) Enter your username. If you are using **Ubuntu**, your username is: `ubuntu`, otherwise it is `opc`.
