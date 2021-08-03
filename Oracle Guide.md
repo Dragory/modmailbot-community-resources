@@ -110,9 +110,18 @@ Once it's been provisioned, it'll look something like this:
 We can then connect to it with an SSH client, since Oracle doesn't offer SSH via the browser.
 
 16) Open your SSH client of choice (I choose PuTTY since it's already installed).
-17) On the side pane, click the + by SSH and then click Auth (not the + though) ![image](https://mesub.is-ne.at/565Vfk35Y.png)
-18) Click 'Browse' by 'Private key for authentication' and select the **private key** ![image](https://mesub.is-ne.at/565VF98oB.png)
-19) Scroll back up the side pane and click session (not the -) ![image](https://mesub.is-ne.at/565WnpJBM.png)
+17) On the side pane, click the + by SSH and then click Auth (not the + though) 
+
+![image](https://mesub.is-ne.at/565Vfk35Y.png)
+
+18) Click 'Browse' by 'Private key for authentication' and select the **private key** 
+
+![image](https://mesub.is-ne.at/565VF98oB.png)
+
+19) Scroll back up the side pane and click session (not the -)
+
+![image](https://mesub.is-ne.at/565WnpJBM.png)
+
 20) Paste the public IP adress (which you'll find on the instance page) into the IP address field, click Default Settings, click save and then click Open. (This ensures that the IP adress is saved for next time you open the PuTTY) 
 a.	If any prompt comes up about the host's fingerprint/connecting to it, click yes.
 21) Enter your username. If you are using **Ubuntu**, your username is: `ubuntu`, otherwise it is `opc`.
@@ -248,11 +257,50 @@ Skip this section if you have followed the guide all the way up to here. Here's 
 This allows you to download and configure the bot from the terminal, no fuss involved. I will not be providing support on this section. 
 (Many thanks to [@dopeghoti](https://github.com/dopeghoti) for providing this method.)
 
-Prerequisite: Please follow steps [1](https://github.com/Dragory/modmailbot-community-resources/blob/master/GCP%20Guide.md#step-one-discord-developer-portal), [3](https://github.com/Dragory/modmailbot-community-resources/blob/master/GCP%20Guide.md#step-three-google-cloud-platform-nodejs-and-pm2) and [4]() before continuing this section.
+Prerequisite: Please follow steps [1](https://github.com/Dragory/modmailbot-community-resources/blob/master/Oracle%20Guide.md#step-one-discord-developer-portal), [3](https://github.com/Dragory/modmailbot-community-resources/blob/master/Oracle%20Guide.md#step-three-oracle-cloud--putty) and [4](https://github.com/Dragory/modmailbot-community-resources/blob/master/Oracle%20Guide.md#step-four-nodejs--pm2) before continuing this section.
+
+1) Make a directory and navigate to it.
+
+2) Install wget (`sudo apt install wget`)
+
+3) Run `wget https://github.com/Dragory/modmailbot/archive/v3.3.2.tar.gz` `v3.0.3.tar.gz` can be different if the bot has been updated after this guide was written.
+
+4) Run `tar zxf v3.3.2.tar.gz`
+
+5) Navigate to the directory it creates.
+
+6) Run `cp config.{example.,}ini`
+
+7) Run `nano config.ini` and edit the config to your liking.
+
+Continue following the guide from step [7.](https://github.com/Dragory/modmailbot-community-resources/blob/master/Oracle%20Guide.md#step-seven-inviting-the-bot-to-the-server)
 
 # Logs
+ [WIP]
+We've got the bot working now but you may want to have working logs. If this is the case then follow the instructions below.
 
-blah
+Prequisite: Port 8890 (TCP) has to be opened. If you don't know how to open a port then check [PortForward's website](http://portforward.com/).
+
+Once you've done that then:
+
+1) In the search bar (at the top of the screen, in line with Oracle cloud) type `security list` and click on the first result under the 'Resources' tab:
+
+![image](https://mesub.is-ne.at/566jS5Erg.png)
+
+2) Click on 'Add ingress rule'
+3) It should contain the following details:
+
+**Source Type**: CIDR
+
+**Source CIDR**: 0.0.0.0/0
+
+**IP Protocol**: TDP
+
+**Source Destination Range**: 8890 (or different if you have more than 1 modmail bot running)
+
+4) Click 'Add Ingress Rules'
+
+![image](https://mesub.is-ne.at/566lLnqA2.png)
 
 # Support and feedback
 
