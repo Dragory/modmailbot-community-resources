@@ -2,7 +2,7 @@
 
 Want to host your modmail bot for free? Don’t want to be ridiculed for using Heroku, Glitch or repl.it? This guide will take you through how to get the bot running on Oracle Cloud.
 
-Following the success of my Google Cloud Platform Guide, I've deciced to make one for Oracle Cloud as well.
+Following the success of my Google Cloud Platform Guide, I've decided to make one for Oracle Cloud as well.
 I would strongly recommend that you use [Google Cloud Platform](https://github.com/Dragory/modmailbot-community-resources/blob/master/GCP%20Guide.md) as the set-up is much less confusing and there's added benefits to using it (Google brand recognition, an app that you can use to SSH into etc). However, you may pick Oracle because you plan to run multiple bots [(which google can [eventually] charge for)](https://www.reddit.com/r/googlecloud/comments/lxjf07/getting_charged_for_egress_under_1gbmonth/) or you just don't want to use Google.
 
 **DISCLAIMER: I am not responsible for any charges that you face due to you digressing from the guide.**
@@ -45,4 +45,8 @@ For information on what can go in the config file, check [the official documenta
 
 ## Step three: Oracle Cloud, nodeJS & PM2
 This is where we'll be hosting the bot.
-1) Navigate to https://oracle.com/cloud/free and click 'Start for free'
+1) Navigate to https://oracle.com/cloud/free and click 'Start for free'.
+2) Enter your details and verify your email.
+3) Continue entering your details until you get to pick your home region and set it to **US East (Ashburn)** (This is the closest to GCP's us-east1-b, which Discord uses for its servers).
+![image](https://mesub.is-ne.at/565n2fNCl.png)
+
