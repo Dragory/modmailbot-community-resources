@@ -73,7 +73,7 @@ Select one of the following zones: **us-central1 (lowa), us-east1 (south carolin
   b.	Machine configuration should be:
   **General Purpose Series: N1.**
   
-  **Machine type: e2-micro (0.25 (OR 2) vCPU, 1GB of memory).**
+  **Machine type: e2-micro (2 vCPUs, 1GB of memory).**
   
   **Bootdisk: Debian, CentOS or Ubuntu.**
   
