@@ -5,7 +5,7 @@ Want to host your modmail bot for free? Don’t want to be ridiculed for using H
 
 ## Update: August 2021
 
-Google has decided to move their free offering to an e2-micro VM. The guide has been updated to follow this, ensuring that you will still be on the free tier. If you already have an existing machine, follow [this section](https://github.com/Dragory/modmailbot/blob/master/docs/migrating.md)
+**⚠ Google has decided to move their free offering to an e2-micro VM. The guide has been updated to follow this, ensuring that you will still be on the free tier. If you already have an existing machine, follow [this section](https://github.com/Dragory/modmailbot/blob/master/docs/migrating.md). ⚠**
 **DISCLAIMER: I am not responsible for any charges that you face due to you digressing from the guide.**
 
 **(Need to update your installation? Check [this.)](https://github.com/Dragory/modmailbot/blob/master/docs/updating.md)**
@@ -87,7 +87,7 @@ Select one of the following zones: **us-central1 (lowa), us-east1 (south carolin
  
  If you did it all correctly then it should tell you that your first 744 hours (or something along those lines) are free (This would be on the side of the screen).
 
-![image](https://mesub.is-ne.at/ZXQAQB.png)
+![image](https://mesub.is-ne.at/570TrOwXH.png)
 
 6)	Click create! Once it has loaded it’ll look something like this: ![image](https://mesub.is-ne.at/o3ld33.png)
 
@@ -268,9 +268,9 @@ Prerequisite: Please follow steps [1](https://github.com/Dragory/modmailbot-comm
 
 2) Install wget (`sudo apt install wget`)
 
-3) Run `wget https://github.com/Dragory/modmailbot/archive/v3.0.3.tar.gz`
+3) Run `wget https://github.com/Dragory/modmailbot/archive/v3.3.2.tar.gz` or another, newer version.
 
-4) Run `tar zxf v3.0.3.tar.gz`
+4) Run `tar zxf v3.3.2.tar.gz` or the name of the version you downloaded
 
 5) Navigate to the directory it creates.
 
@@ -385,27 +385,43 @@ Of course you can easily avoid this by [configuring from the terminal](https://g
 If you had previously used this guide, you would have utilised a **f1--micro** instance. Starting from August 1, Google has decided to now use the **e2-micro** instance for its free tier. It will start billing (charging) for the f1-micro instance after August 31. To avoid these charges and continue using your modmail instance for free, you need to do the following steps. 
 
 1) Make a backup of your bot, just in case anything happens when we change the machine type. 
-  a) I would recommend just copying the config.ini file, your database file (in the db folder) and the attachments folder (if you have that option enabled in your config)
-  b) You can copy these files over with FileZilla, or the download option which GCP's web based SSH has (you'll need to get the path of the file however).
+
+I would recommend just copying the config.ini file, your database file (in the db folder) and the attachments folder (if you have that option enabled in your config) You can copy these files over with FileZilla, or the download option which GCP's web based SSH has (you'll need to get the path of the file however).
+
 2) Get on to the terminal (from web based SSH or through other means) and stop the bot.
-  a) You'll then need to stop the bot by `pm2 ls` and then `pm2 stop num`, with `num` being the ID that PM2 has assigned to it, which is likely to be `0`. Alternatively, you can stop it with whatever process manager you used. 
-  b) Close the terminal
- 3) Change the instance of the machine
-   a) (If you aren't on it already) Navigate to the [VM instances page](https://console.cloud.google.com/compute/instances) (the list with all your VM[s])
-   b) In the Name column, click the name of the instance for which you want to change machine type.
-   c) From the instance details page, complete the following steps:
-     Click the Stop button to stop the instance, if you have not stopped it yet.
-     Select the VM instance to edit.
-     Click the Edit button at the top of the VM instance details page.
-     ![image](https://cloud.google.com/compute/images/edit-button.png)
-     Under the Machine configuration section, select **e2-micro**
-     Save your changes.
-   d) Start the instance and the bot.
-     Click start
-     Connect to the instance
-     Start the bot, restoring the files if needed.
+
+You'll then need to stop the bot by `pm2 ls` and then `pm2 stop num`, with `num` being the ID that PM2 has assigned to it, which is likely to be `0`. Alternatively, you can stop it with whatever process manager you used. Close the terminal
+
+3) Change the instance of the machine
+
+(If you aren't on it already) Navigate to the [VM instances page](https://console.cloud.google.com/compute/instances) (the list with all your VM[s]). In the Name column, click the name of the instance for which you want to change machine type.
+From the instance details page, complete the following steps:
+
+Click the Stop button to stop the instance, if you have not stopped it yet.
+ 
+Select the VM instance to edit.
+ 
+Click the Edit button at the top of the VM instance details page.
+ 
+![image](https://cloud.google.com/compute/images/edit-button.png)
+ 
+Under the Machine **Series** section, select **E2**
+
+![image](https://mesub.is-ne.at/570S2X5bT.png)
+
+Under the Machine **Configuration** section, select **e2-micro**
+
+![image](https://mesub.is-ne.at/570Sx1yKB.png)
+
+Save your changes.
+
+4) Start the instance and the bot.
+
+Click start/resume and connect to the instance. Start the bot, restoring the files if needed.
 
 That should be it!
+
+Many thanks to `fox` for providing screenshots!
    
 # Support and feedback
 
