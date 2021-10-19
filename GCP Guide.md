@@ -71,7 +71,7 @@ a.	Give it a name.
 Select one of the following zones: **us-central1 (lowa), us-east1 (south carolina) or us-west1 (oregon).** I’m picking us-east1 as it is closest to Discord's API servers. I would leave the zone but change it if you wish.
 
   b.	Machine configuration should be:
-  **General Purpose Series: N1.**
+  **General Purpose Series: E2.**
   
   **Machine type: e2-micro (2 vCPUs, 1GB of memory).**
   
@@ -431,5 +431,5 @@ Additionally, if you've got any suggestions on how to improve the guide then ple
 
 
 
-_This guide was last updated on the 13/8/2021._
-Guide revision: 6 (V1.5)
+_This guide was last updated on the 16/10/2021._
+Guide revision: 7 (V1.5.1)
