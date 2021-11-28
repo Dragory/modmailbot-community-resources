@@ -1,5 +1,4 @@
 # How to Host Dragony's ModMail Bot, on Replit, for Free!
-
 You're considering to host the bot, but you have no money. This is a guide to how you can run Dragony's ModMail bot on Replit, for free. As Replit is classed as a nonstandard host, according to the ModMail staff, you need to do a lot of tweaking to get it working. This guide is an easy way to follow those steps and get your bot up and running! If you're not feeling Replit, there's another great guide made by [@mesub7](https://github.com/mesub7) that takes you through hosting the bot on [Google Cloud](https://github.com/Dragory/modmailbot-community-resources/blob/master/GCP%20Guide.md). 
 
 ## Step 1: Creating the Bot
@@ -89,3 +88,6 @@ mysqlOptions.user = YourDatabaseUsername
 9)	You should be done with setting up the bot.
 
 ## Getting Support
+Like mentioned in the description at the beginning, Replit is classed as a nonstandard host, according to the ModMail staff. If you're having a problem with any aspect of this tutorial, you shouldn't go to them, as this is unofficial. I have tried to explain this in as much detail as possible in a simplistic way. 
+
+If you're having issues with something else regarding the bot, you should be going to them, though I will try to help out as much as possible.
