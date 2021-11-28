@@ -88,3 +88,4 @@ mysqlOptions.user = YourDatabaseUsername
 8)	Click 'Create Monitor' twice as it wants you to add an emergency contact. You can do this, but you will get spammed. The monitor will look like it is down constantly, that is because there's nothing on the web page. This is absolutely fine, so don't be worried if you see that your bot is down, because 99% of the time it isn't.
 9)	You should be done with setting up the bot.
 
+## Getting Support
