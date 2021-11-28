@@ -77,7 +77,7 @@ mysqlOptions.user = YourDatabaseUsername
 4)	In the 'Key' box, type **MM_MYSQL_OPTIONS__PASSWORD**. Take note of the single underscore after MYSQL and the double one after OPTIONS.
 5)	In the 'Value' box, put in your MySQL database password (not your RemoteMySQL password). 
 
-## Step 11: Keeping the bot online 24 / 7
+## Step 10: Keeping the bot online 24 / 7
 1)	On your Repl, press 'Run'. Wait for the bot to print 'Done! Now listening to DMs' in the Console.
 2)	Above the Console area there should now be a web page, with a link present. This is embedded into the website. On some browsers, the contents of the web page does not actually show. Copy the link above this embedded website. It should look like: https://(repl_name).(username).repl.co.
 3)	Go to: https://uptimerobot.com/.
