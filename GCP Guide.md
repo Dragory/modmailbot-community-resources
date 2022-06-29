@@ -109,9 +109,9 @@ Now to install node.
 
 5)	List the versions of node available by running `nvm ls-remote`.
 
-Now (at the time of writing) since the bot supports versions 12 to 14, for compatibility's sake, we'll install the latest version of V12 (feel free to install any version between 12 and 14).
+Now (at the time of writing) since the bot supports version 16 (although you _could_ get away with LTS version 12 to 14), for compatibility's sake, we'll install the latest version of V16
 
-6)	Run `nvm install 12.19.0` (or whatever version you want that's between V12 and V14 (like 14.13.1 for example).
+6)	Run `nvm install 16.15.1` (or whatever version you want that's between V12 and V16 (like 16.1.0 for example).
 
 7)	Optional: run `nvm ls` to verify that it is installed.
 
