@@ -9,6 +9,7 @@ Without following these instructions, you wont be able to run the bot on Replit 
 3)	In the top left corner press '+ Create'. On that page, press 'Import from GitHub'.
 4)	Copy this link into the GitHub URL box: https://github.com/Dragory/modmailbot.
 5)	Press 'Import from GitHub'.
+![image](https://user-images.githubusercontent.com/94929481/180605829-6bcac31b-f072-4840-ae42-71021212461b.png)
 
 ## Step 2: Making Necessary Amendments
 You may be able to skip Stages 2-4 if a popup comes on the right, checking your startup command. 
@@ -29,11 +30,14 @@ You may be able to skip Stages 2-4 if a popup comes on the right, checking your 
 6)	In the 'Scopes' sub-menu, check the 'bot' box. In the 'Bot Permissions' sub-menu, check these following boxes: `Manage Channels`, `Manage Messages` and `Attach Files`. You do not need to give the bot administrator permission or any other permissions.
 7)	Underneath there is a 'Generated URL'. Copy that and go into a new tab on your browser, and invite the bot to the server(s) you want it to be in.
 8)	Once you've done that, press 'Reset' then copy the Token, in the Token sub-menu itself. This will copy the bot's token for you to use later. **Do not share this with anybody.**
+![image](https://user-images.githubusercontent.com/94929481/180605905-9bf6563e-6cc5-41cb-bf06-84300016d778.png)
 
 ## Step 4: Setting up the Token
 1)	On the left of the Repl find the lock symbol. Click it.
 2)	Press 'Got it' and then a small menu comes up.
 3)	In the 'Key' box, type **MM_TOKEN**. In the 'Value' box, right click and Paste. If something irrelevant comes up, go back to Stage 8 on Step 3.
+![image](https://user-images.githubusercontent.com/94929481/180605937-68c77307-c072-4526-99ec-0fa76c38dffb.png)
+
 
 ## Step 5: Keeping the bot online 24 / 7
 1)	On your Repl, press 'Run'. Wait for the bot to print 'Done! Now listening to DMs' in the Console.
