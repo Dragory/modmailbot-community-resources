@@ -10,3 +10,4 @@ Want to submit a guide or other resource? Open a pull request!
 * [List of community plugins](./Plugins.md)
 * [Google Cloud Platform hosting guide](./GCP%20Guide.md) by [@mesub7](https://github.com/mesub7)
 * [Thread Permissions](./Thread%20Permissions.md) by [@Eegras](https://github.com/Eegras)
+* [Deploying using Docker](https://github.com/JesseStorms/docker_modmailbot) by [@JesseStorms](https://github.com/JesseStorms)
