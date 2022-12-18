@@ -8,7 +8,7 @@ Want to host your modmail bot for free? Don’t want to be ridiculed for using H
 **⚠ Google has decided to move their free offering to an e2-micro VM. The guide has been updated to follow this, ensuring that you will still be on the free tier. If you already have an existing machine, follow [this section](https://github.com/Dragory/modmailbot/blob/master/docs/migrating.md). ⚠**
 **DISCLAIMER: I am not responsible for any charges that you face due to you digressing from the guide.**
 
-**(Need to update your installation? Check [this.)](https://github.com/Dragory/modmailbot/blob/master/docs/updating.md)**
+**(Need to update your installation? Check [this.](https://github.com/Dragory/modmailbot/blob/master/docs/updating.md))**
 
 **Highly recommended: Configure from the host to save time and to minimise errors**
 If you know your way a little bit around Linux and want to just download and configure the bot remotely, you can use the Terminal instructions found [here](https://github.com/Dragory/modmailbot-community-resources/blob/master/GCP%20Guide.md#terminal). It's quicker but can be confusing if you're new to server administration as there is no graphical interface (buttons to press).
@@ -26,7 +26,7 @@ So, with that out of the way, let us begin!
 3)	Go to the bot section (which is found on the left hand navigation pane) and click add bot.
 4)	Confirm your choice.
 5) Ensure that the **Server Members intent** is enabled.
-![image](https://mesub.is-ne.at/STWMKt.png)
+![image](https://i.imgur.com/UVV5dcy.png)
 6) (Optional) Customise your bot. You can change the name and add a profile picture if you wish. You can also make the bot private (so only you can invite it). **Do not change the OAUTH2 code grant setting.**
 
 Don’t forget to save!
@@ -68,7 +68,7 @@ Consult: https://cloud.google.com/billing/docs/how-to/payment-methods for more i
 5)	**Follow this very carefully if you want it to be free:**
 
 a.	Give it a name.
-Select one of the following zones: **us-central1 (lowa), us-east1 (south carolina) or us-west1 (oregon).** I’m picking us-east1 as it is closest to Discord's API servers. I would leave the zone but change it if you wish.
+Select one of the following zones: **us-central1 (Iowa), us-east1 (South Carolina) or us-west1 (Oregon).** I’m picking us-east1 as it is closest to Discord's API servers. I would leave the zone but change it if you wish.
 
   b.	Machine configuration should be:
   **General Purpose Series: E2.**
@@ -85,9 +85,9 @@ Select one of the following zones: **us-central1 (lowa), us-east1 (south carolin
   
   **Firewall: Allow both HTTPS and HTTP traffic.**
  
- If you did it all correctly then it should tell you that your first 744 hours (or something along those lines) are free (This would be on the side of the screen).
+ **Please be sure that these settings are correct as Google no longer displays the message that your first xxx hours are free this month. (It still is free, however)**
 
-![image](https://mesub.is-ne.at/570TrOwXH.png)
+ifewoijfwef
 
 6)	Click create! Once it has loaded it’ll look something like this: ![image](https://mesub.is-ne.at/o3ld33.png)
 
