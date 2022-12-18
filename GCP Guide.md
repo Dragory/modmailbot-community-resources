@@ -443,4 +443,4 @@ Additionally, if you've got any suggestions on how to improve the guide then ple
 
 
 _This guide was last updated on the 18/12/2022._
-Guide revision: 7 (V1.6.2
+Guide revision: 7 (V1.6.2)
