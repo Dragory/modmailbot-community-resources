@@ -85,7 +85,7 @@ Select one of the following zones: **us-central1 (Iowa), us-east1 (South Carolin
   
   **Bootdisk: Debian, CentOS or Ubuntu.**
   
-  **Leave the disk type to: standard persistent disk.**
+  **Change the disk type to: standard persistent disk.**
   
   **Disk size: 10-30GB (I’m using 25GB).**
   
