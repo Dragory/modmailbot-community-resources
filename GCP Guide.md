@@ -8,7 +8,7 @@ Want to host your modmail bot for free? Don’t want to be ridiculed for using H
 **⚠ Google has decided to move their free offering to an e2-micro VM. The guide has been updated to follow this, ensuring that you will still be on the free tier. If you already have an existing machine, follow [this section](https://github.com/Dragory/modmailbot/blob/master/docs/migrating.md). ⚠**
 **DISCLAIMER: I am not responsible for any charges that you face due to you digressing from the guide.**
 
-**(Need to update your installation? Check [this.)](https://github.com/Dragory/modmailbot/blob/master/docs/updating.md)**
+**(Need to update your installation? Check [this.](https://github.com/Dragory/modmailbot/blob/master/docs/updating.md))**
 
 **Highly recommended: Configure from the host to save time and to minimise errors**
 If you know your way a little bit around Linux and want to just download and configure the bot remotely, you can use the Terminal instructions found [here](https://github.com/Dragory/modmailbot-community-resources/blob/master/GCP%20Guide.md#terminal). It's quicker but can be confusing if you're new to server administration as there is no graphical interface (buttons to press).
@@ -25,8 +25,10 @@ So, with that out of the way, let us begin!
 2)	Give it a name.
 3)	Go to the bot section (which is found on the left hand navigation pane) and click add bot.
 4)	Confirm your choice.
-5) Ensure that the **Server Members intent** is enabled.
-![image](https://mesub.is-ne.at/STWMKt.png)
+5) Ensure that the **Server Members intent and the message content intent** are enabled. You may also wish to enable the presence intent if needed.
+
+![image](https://i.imgur.com/UVV5dcy.png)
+
 6) (Optional) Customise your bot. You can change the name and add a profile picture if you wish. You can also make the bot private (so only you can invite it). **Do not change the OAUTH2 code grant setting.**
 
 Don’t forget to save!
@@ -37,7 +39,9 @@ We’ll be coming back to this later so make sure that you keep this tab open!
 1)	Navigate to https://github.com/Dragory/modmailbot/releases and download the latest version (as of me updating this it was v3.0.3).
 2)	Download the zip and extract it to a folder.
 3)	Copy and paste the `example.config.ini` file and rename it to `config.ini`.
+
 ![image](https://user-images.githubusercontent.com/49169805/87231360-7dc4d980-c3ae-11ea-86c4-8a59e6199bb0.png)
+
 4)	Open the config.ini file and edit it to your liking. You’ll need the bot token from the developer portal as well as a `mainServerId` and a `inboxServerId`.
 For information on what can go in the config file, check [the official documentation.](https://github.com/Dragory/modmailbot/blob/master/docs/configuration.md)
 
@@ -64,11 +68,15 @@ Consult: https://cloud.google.com/billing/docs/how-to/payment-methods for more i
  
 
 3)	Go to compute engine.
-4)	Click create (when the option becomes available). ![image](https://mesub.is-ne.at/ABsVzK.png)
+4)	Click create (when the option becomes available).
+
+![image](https://i.imgur.com/xWK8uBo.png)
+
 5)	**Follow this very carefully if you want it to be free:**
 
 a.	Give it a name.
-Select one of the following zones: **us-central1 (lowa), us-east1 (south carolina) or us-west1 (oregon).** I’m picking us-east1 as it is closest to Discord's API servers. I would leave the zone but change it if you wish.
+
+Select one of the following zones: **us-central1 (Iowa), us-east1 (South Carolina) or us-west1 (Oregon).** I’m picking us-east1 as it is closest to Discord's API servers. I would leave the zone but change it if you wish.
 
   b.	Machine configuration should be:
   **General Purpose Series: E2.**
@@ -77,7 +85,7 @@ Select one of the following zones: **us-central1 (lowa), us-east1 (south carolin
   
   **Bootdisk: Debian, CentOS or Ubuntu.**
   
-  **Leave the disk type to: standard persistent disk.**
+  **Change the disk type to: standard persistent disk.**
   
   **Disk size: 10-30GB (I’m using 25GB).**
   
@@ -85,15 +93,20 @@ Select one of the following zones: **us-central1 (lowa), us-east1 (south carolin
   
   **Firewall: Allow both HTTPS and HTTP traffic.**
  
- If you did it all correctly then it should tell you that your first 744 hours (or something along those lines) are free (This would be on the side of the screen).
+ **Please be sure that these settings are correct as Google no longer displays the message that your first xxx hours are free this month. (It still is free, however)**
 
-![image](https://mesub.is-ne.at/570TrOwXH.png)
 
-6)	Click create! Once it has loaded it’ll look something like this: ![image](https://mesub.is-ne.at/o3ld33.png)
+6)	Click create! Once it has loaded it’ll look something like this:
 
-7)	Click the SSH button to view your instance. It should be a command line. ![image](https://mesub.is-ne.at/SECrhd.png)
+![image](https://i.imgur.com/ENzvFpn.png)
 
-8)	Run `whoami` and note the output. It is **very important** (to avoid user account issues). ![image](https://mesub.is-ne.at/rDJ9sU.png)
+7)	Click the SSH button to view your instance. It should be a command line.
+
+![image](https://i.imgur.com/YL6NSTI.png)
+
+8)	Run `whoami` and note the output. It is **very important** (to avoid user account issues).
+
+![image](https://i.imgur.com/RLFcJDe.png)
 
 ### nvm, node.js and pm2
 We need the node version manager and node.js for the bot and we need pm2 to keep it on all the time, so we’ll take the opportunity to get them now. 
@@ -111,7 +124,7 @@ Now to install node.
 
 Now (at the time of writing) since the bot supports version 16 (although you _could_ get away with LTS version 12 to 14), for compatibility's sake, we'll install the latest version of V16
 
-6)	Run `nvm install 16.15.1` (or whatever version you want that's between V12 and V16 (like 16.1.0 for example).
+6)	Run `nvm install 16.19.0` (or whatever version you want that's between V12 and V16 (like 16.17.0 for example).
 
 7)	Optional: run `nvm ls` to verify that it is installed.
 
@@ -124,7 +137,7 @@ Now for pm2.
 ## Step four: Preparing to transfer the bot’s files over SFTP
 
 We would have gone with FTP (File Transfer Protocol) but I was advised to use SFTP (Secure File Transfer Protocol) so here we are
-(oh and using SFTP saves us a few steps).
+(oh, and using SFTP saves us a few steps).
 
 1)	Download and install PuTTYgen [32-bit](https://the.earth.li/~sgtatham/putty/latest/w32/puttygen.exe) or [64-bit](https://the.earth.li/~sgtatham/putty/latest/w64/puttygen.exe)
 
@@ -138,6 +151,7 @@ _some randomness_.
 ![image](https://user-images.githubusercontent.com/49169805/87231709-591e3100-c3b1-11ea-804c-a151ff298100.png)
 
 4)	Change the key comment to **the output of the whoami command you ran earlier!!!**.
+
 ![image](https://user-images.githubusercontent.com/49169805/87231737-9f739000-c3b1-11ea-8ab9-e02e32c943b4.png)
 
 5)	Save the private key. Keep it safe as you’ll need it later!
@@ -151,17 +165,17 @@ a.	I would also recommend that you save the public key as well, anything could h
 
 2)	Click edit at the top.
 
-![image](https://mesub.is-ne.at/899nJz.png)
+![image](https://i.imgur.com/TvzNYWD.png)
 
-3)	Scroll down to the SSH section and click “Show and edit”.
+3)	Scroll down to the SSH keys section and click "add item".
 
-![image](https://mesub.is-ne.at/8rp9VM.png)
+![image](https://i.imgur.com/IznxT2v.png)
 
 4)	Paste the **public** key that you copied from PuTTY earlier.
 
-5)	Scroll down to the bottom and click save.
+5)	Click save.
 
-![image](https://mesub.is-ne.at/13KGYX.png)
+![image](https://i.imgur.com/AJOIusf.png)
 
 ## Step six: Uploading the files to Google Cloud Platform
 Now we need to upload the bot’s files!
@@ -171,6 +185,7 @@ Now we need to upload the bot’s files!
 2)	Run the application.
 
 3)	Go to the settings menu.
+
 ![image](https://user-images.githubusercontent.com/49169805/87231818-393b3d00-c3b2-11ea-8b5a-efaea59df5fe.png)
 
 4)	Go to the SFTP section.
@@ -179,10 +194,11 @@ Now we need to upload the bot’s files!
 
 6)	Press ok.
 
-![image](https://mesub.is-ne.at/xqbyg8.png)
+![image](https://i.imgur.com/N5SDe72.png)
 
 7)	Navigate to File > Site Manager.
-![image](https://mesub.is-ne.at/NYgGfw.png)
+
+![image](https://i.imgur.com/7EMOgsj.png)
 
 8)	Click new site.
 
@@ -193,34 +209,39 @@ Now we need to upload the bot’s files!
 11)	In the username section, put in the output of the `whoami` command (which you should have got from the terminal).
 
 12)	Click ok to save it. (Password Prompt is optional)
-![image](https://mesub.is-ne.at/OfBViJ.png)
+
+![image](https://i.imgur.com/f8Vawzc.png)
 
 ## Step seven: Accessing the server
 Now we’ve set it all up, we should be able to access the server!
 
 1)	 Navigate to File > site manager.
 
-![image](https://mesub.is-ne.at/NYgGfw.png)
+![image](https://i.imgur.com/UvNF1Ai.png)
 
 2)	Click connect.
 
 3)	If given a password prompt, just leave it blank and press enter.
 
 4)	If given an unknown key prompt comes up, then click ok (Always trusting the host is up to you).
-![image](https://mesub.is-ne.at/aCPwlv.png)
+
+![image](https://i.imgur.com/gA1O6kE.png)
 
 If it all works, then it should look like this:
-![image](https://mesub.is-ne.at/GLe5bZ.png)
+
+![image](https://i.imgur.com/EUgQC2K.png)
 
 ## Step eight: Transferring the bot’s files
 
 1)	Locate your bot’s files in the internal navigator. 
 
-![image](https://mesub.is-ne.at/Ye5tRh.png)
+![image](https://i.imgur.com/9Vo0JZ0.png)
 
 2)	Drag the files over.
 
-3)	If it was successful then you should see the folder on the other side. ![image](https://mesub.is-ne.at/w6L4HW.png)
+3)	If it was successful then you should see the folder on the other side.
+
+![image](https://i.imgur.com/q45Fcvc.png)
 
 ## Step nine: Inviting the bot to the server
 Now it is time to get the bot in your servers!
@@ -229,14 +250,13 @@ Now it is time to get the bot in your servers!
 
 2)	Go to the hamburger menu and click on oauth2.
 
-![image](https://mesub.is-ne.at/g4n1YW.png)
-
 3)	Scroll down and select bot.
 
 4)	Add the following permissions: manage channels, manage messages and attach files.
-![image](https://mesub.is-ne.at/WZwOGJ.png)
 
-5)	Navigate to the link generated.
+![image](https://i.imgur.com/gYl746i.png)
+
+5)	Navigate to the link generated at the bottom of the page.
 
 6)	Add the bot to your sever(s).
 
@@ -268,9 +288,9 @@ Prerequisite: Please follow steps [1](https://github.com/Dragory/modmailbot-comm
 
 2) Install wget (`sudo apt install wget`)
 
-3) Run `wget https://github.com/Dragory/modmailbot/archive/v3.3.2.tar.gz` or another, newer version.
+3) Run `wget https://github.com/Dragory/modmailbot/archive/v3.6.1.tar.gz` or another, newer version.
 
-4) Run `tar zxf v3.3.2.tar.gz` or the name of the version you downloaded
+4) Run `tar zxf v3.6.1.tar.gz` or the name of the version you downloaded
 
 5) Navigate to the directory it creates.
 
@@ -288,18 +308,11 @@ Prequisite: Port 8890 (TCP) has to be opened. If you don't know how to open a po
 
 Once you've done that then:
 
-1) Go to https://console.cloud.google.com/. 
-
-2) Click on compute engine and then VM instances.
-
-3) If you didn't dismiss the related actions section, there should be an option to go to the "firewall rules" section. Click it.
-![image](https://mesub.is-ne.at/hjenkB.png)
-
- a) If there isn't anything about that then navigate to: https://console.cloud.google.com/networking/firewalls/.
+1) Navitage to: https://console.cloud.google.com/networking/firewalls/.
  
 You should be here:
 
-![image](https://mesub.is-ne.at/aC1wLb.png)
+![image](https://i.imgur.com/3SsQqRP.png)
 
 4) Click on "Create firewall rule".
 
@@ -318,9 +331,11 @@ You should be here:
 
  **Source IP ranges:** `0.0.0.0/0`.
 
- **Protocols and ports**: Allow specific protocols and ports. tcp: `8890`.
+ **Protocols and ports**: Allow specific protocols and ports. tcp: `8890`. (where `8890` is the port that you chose in your config [if applicable]. Alternatively, you can add a range if you are going to be using multiple modmail instances e.g., `8890-8892`)
  
- It should look a bit like this: ![image](https://mesub.is-ne.at/OHQO1j.png)
+ It should look a bit like this:
+ 
+ ![image](https://i.imgur.com/UEQVu70.png)
  
  6) Click create.
  
@@ -348,7 +363,7 @@ Until Google decides to change its always free tier to something that isn't usab
 
 **I get an error about gateway intents or the bot is stuck on "Connecting to Discord..."**
 
-Make sure that the **server members intent** is enabled.
+Make sure that the **server members intent and the message content intent** are enabled.
 
 # User accounts
 
@@ -358,17 +373,15 @@ It is quite important that the username/key comment matches what the `whoami` co
 
 In order to avoid this, **please please please** try to make sure that the username/key-comment matches the output of the `whoami` command. At the very minimum though (or if you aren't using PuTTY), **make sure that the key comment and the username for FileZilla match.** We can change the Linux username (on Google's end) by doing the following:
 
-**IMPORTANT:** Files on your old username will be wiped, be sure that you don't need anything from it. You have been warned. 
+**IMPORTANT:** Files on your old username may be wiped, be sure that you don't need anything from it. You have been warned. 
 
 1) Connect to your instance.
 
 2) Click on the gear.
 
-![image](https://mesub.is-ne.at/8oHUyO.png)
+![image](https://i.imgur.com/QyoKXdh.png)
 
 3) Click _Change Linux username._
-
-![image](https://mesub.is-ne.at/thPt8R.png)
 
 4) Enter the username that the key comment/FileZilla username used.
 
@@ -407,11 +420,9 @@ Click the Edit button at the top of the VM instance details page.
  
 Under the Machine **Series** section, select **E2**
 
-![image](https://mesub.is-ne.at/570S2X5bT.png)
-
 Under the Machine **Configuration** section, select **e2-micro**
 
-![image](https://mesub.is-ne.at/570Sx1yKB.png)
+![image](https://i.imgur.com/qoP0fej.png)
 
 Save your changes.
 
@@ -431,5 +442,5 @@ Additionally, if you've got any suggestions on how to improve the guide then ple
 
 
 
-_This guide was last updated on the 16/10/2021._
-Guide revision: 7 (V1.5.1)
+_This guide was last updated on the 18/12/2022._
+Guide revision: 8 (V1.6.2)
