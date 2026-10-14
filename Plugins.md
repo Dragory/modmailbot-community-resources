@@ -56,3 +56,8 @@ This document lists some of the community plugins available for Modmail.
 * Allows you to get a message link in the actual DM channel, mainly used for T&S reports of self-harm threats.
 * **Install:** https://github.com/DarkView/MMEmergencyLink
 * **Author:** [DarkView](https://github.com/DarkView)
+
+#### FM-17/DataRequests
+* Allows moderators to fulfill user data retrieval and deletion requests.
+* **Install:** https://github.com/FM-17/DataRequests
+* **Author:** [FM-17](https://github.com/FM-17)
